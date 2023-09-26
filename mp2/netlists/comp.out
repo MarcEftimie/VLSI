@@ -6,10 +6,10 @@ Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalen
 Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
-Flattening unmatched subcell crsl_d_flip_flop in circuit shift_register.spice (1)(1 instance)
+Flattening unmatched subcell crsl_d_flip_flop in circuit shift_register.spice (0)(1 instance)
 
 Subcircuit summary:
-Circuit 1: crsl_d_flip_flop.spice          |Circuit 2: shift_register.spice            
+Circuit 1: shift_register.spice            |Circuit 2: crsl_d_flip_flop.spice          
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__pfet_01v8 (7)                |sky130_fd_pr__pfet_01v8 (7)                
 sky130_fd_pr__nfet_01v8 (7)                |sky130_fd_pr__nfet_01v8 (7)                
@@ -20,7 +20,7 @@ Resolving symmetries by property value.
 Resolving symmetries by pin name.
 Netlists match with 9 symmetries.
 Cells have no pins;  pin matching not needed.
-Device classes crsl_d_flip_flop.spice and shift_register.spice are equivalent.
+Device classes shift_register.spice and crsl_d_flip_flop.spice are equivalent.
 
 Final result: Circuits match uniquely.
 .

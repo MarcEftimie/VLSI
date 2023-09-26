@@ -1,8 +1,8 @@
 magic
 tech sky130A
-timestamp 1695605185
+timestamp 1695762812
 use crsl_d_flip_flop  crsl_d_flip_flop_0
-timestamp 1695605185
-transform 1 0 -90 0 1 1455
-box 85 -1465 470 445
+timestamp 1695762812
+transform 1 0 80 0 1 1510
+box -85 -1545 230 545
 << end >>
