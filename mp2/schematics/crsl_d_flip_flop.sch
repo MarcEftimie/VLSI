@@ -407,7 +407,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos4.sym} 380 30 0 0 {name=M5
 L=0.15
-W=4
+W=3.9
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

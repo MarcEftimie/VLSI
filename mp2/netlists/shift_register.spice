@@ -1,0 +1,25 @@
+* NGSPICE file created from shift_register.ext - technology: sky130A
+
+.subckt crsl_d_flip_flop VN
+X0 a_400_n210# Q_BAR Q VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X1 VP a_260_n2220# a_390_n2140# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X2 a_370_n1690# a_260_n2220# a_390_n2140# VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X3 VN Q_BAR Q VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X4 a_260_n2220# CLK D VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X5 a_390_n2140# CLK D_BAR VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X6 a_260_n2220# a_390_n2140# a_370_n1690# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X7 Q_BAR Q a_400_n210# VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X8 VN CLK a_370_n1690# VN sky130_fd_pr__nfet_01v8 ad=0.65 pd=3.6 as=0.65 ps=3.6 w=1.3 l=0.15
+X9 Q_BAR Q VN VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X10 VP CLK a_400_n210# VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X11 Q CLK a_260_n2220# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X12 a_260_n2220# a_390_n2140# VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X13 a_390_n2140# CLK Q_BAR VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+.ends
+
+
+* Top level circuit shift_register
+
+Xcrsl_d_flip_flop_0 VSUBS crsl_d_flip_flop
+.end
+
