@@ -17,10 +17,20 @@ X12 a_n70_n2490# a_10_n1210# D VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=
 X13 a_40_60# Q_BAR Q VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
 .ends
 
+.subckt inverter a_n40_520# a_40_n190# w_n230_250# a_n190_n190#
+X0 a_40_n190# a_n40_520# a_n190_n190# a_n190_n190# sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X1 a_40_n190# a_n40_520# w_n230_250# w_n230_250# sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+.ends
 
-* Top level circuit shift_register
-
-Xcrsl_d_flip_flop_0 crsl_d_flip_flop_0/D crsl_d_flip_flop_0/D_BAR crsl_d_flip_flop_0/Q
-+ crsl_d_flip_flop_0/Q_BAR crsl_d_flip_flop_0/CLK crsl_d_flip_flop_0/VP VSUBS crsl_d_flip_flop
-.end
+.subckt shift_register D Q Q_BAR VP VN CLK
+Xcrsl_d_flip_flop_0 D crsl_d_flip_flop_0/D_BAR crsl_d_flip_flop_1/D crsl_d_flip_flop_1/D_BAR
++ CLK VP VN crsl_d_flip_flop
+Xcrsl_d_flip_flop_1 crsl_d_flip_flop_1/D crsl_d_flip_flop_1/D_BAR crsl_d_flip_flop_2/D
++ crsl_d_flip_flop_2/D_BAR CLK VP VN crsl_d_flip_flop
+Xcrsl_d_flip_flop_2 crsl_d_flip_flop_2/D crsl_d_flip_flop_2/D_BAR crsl_d_flip_flop_3/D
++ crsl_d_flip_flop_3/D_BAR CLK VP VN crsl_d_flip_flop
+Xinverter_1 D crsl_d_flip_flop_0/D_BAR VP VN inverter
+Xcrsl_d_flip_flop_3 crsl_d_flip_flop_3/D crsl_d_flip_flop_3/D_BAR Q Q_BAR CLK VP VN
++ crsl_d_flip_flop
+.ends
 

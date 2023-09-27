@@ -1,9 +1,368 @@
-timestamp 1695762812
+timestamp 1695846183
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use inverter inverter_1 1 0 -190 0 1 2150
+use crsl_d_flip_flop crsl_d_flip_flop_3 1 0 2050 0 1 3020
+use crsl_d_flip_flop crsl_d_flip_flop_2 1 0 1420 0 1 3020
+use crsl_d_flip_flop crsl_d_flip_flop_1 1 0 790 0 1 3020
 use crsl_d_flip_flop crsl_d_flip_flop_0 1 0 160 0 1 3020
+port "VN" 5 -100 1620 -100 1620 m1
+port "CLK" 6 -420 2300 -420 2300 m1
+port "VP" 4 -100 2970 -100 2970 m1
+port "Q_BAR" 3 2510 2570 2510 2570 li
+port "Q" 2 2510 2690 2510 2690 li
+port "D" 1 -420 2690 -420 2690 li
+node "VN" 1 184.811 -100 1620 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16400 900 0 0 0 0 0 0 0 0 0 0
+node "CLK" 1 202.944 -420 2300 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32800 980 0 0 0 0 0 0 0 0 0 0
+node "VP" 1 180.116 -100 2970 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16000 880 0 0 0 0 0 0 0 0 0 0
+node "Q_BAR" 13 27.3905 2510 2570 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q" 13 27.3905 2510 2690 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 0 0 0 0 0 0 0 0 0 0
+node "D" 13 34.0396 -420 2690 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "crsl_d_flip_flop_0/VN" "VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "Q" "Q_BAR" 9.44444
+cap "D" "CLK" 0.42073
+cap "VN" "CLK" 8.31215
+cap "VP" "CLK" 8.3619
+cap "VP" "D" 0.431703
+cap "crsl_d_flip_flop_1/a_40_n2540#" "crsl_d_flip_flop_1/D_BAR" 0.58678
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_0/a_40_n2540#" 42.323
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_0/Q" 18.3163
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_2/a_n150_n2570#" 0.239861
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_0/a_40_n2540#" 12.6501
+cap "crsl_d_flip_flop_0/Q" "crsl_d_flip_flop_1/a_n70_n2490#" 2.01701
+cap "crsl_d_flip_flop_1/a_10_n1210#" "crsl_d_flip_flop_0/a_40_n2540#" 0.0733646
+cap "crsl_d_flip_flop_1/a_n150_n2570#" "crsl_d_flip_flop_0/a_40_n2540#" 18.3203
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_1/D_BAR" 54.5687
+cap "crsl_d_flip_flop_0/Q" "crsl_d_flip_flop_1/a_n150_n2570#" 1.51424
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_1/D_BAR" 5.16187
+cap "crsl_d_flip_flop_1/a_n150_n2570#" "crsl_d_flip_flop_1/D_BAR" 188.081
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_0/a_n70_n2490#" 1.40862
+cap "crsl_d_flip_flop_0/Q" "crsl_d_flip_flop_1/Q" 6.09386
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_0/a_n70_n2490#" 7.52741
+cap "crsl_d_flip_flop_1/a_n150_n2570#" "crsl_d_flip_flop_0/a_n70_n2490#" 0.239861
+cap "crsl_d_flip_flop_1/Q" "crsl_d_flip_flop_1/D_BAR" 6.78629
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_2/a_n70_n2490#" 1.03155
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_1/a_40_n2540#" 1.21489
+cap "crsl_d_flip_flop_0/Q" "crsl_d_flip_flop_0/a_40_n2540#" 2.84217e-14
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_1/a_n70_n2490#" 10.2267
+cap "crsl_d_flip_flop_1/D_BAR" "crsl_d_flip_flop_0/a_40_n2540#" -3.55271e-15
+cap "crsl_d_flip_flop_0/Q" "crsl_d_flip_flop_1/D_BAR" -5.68434e-14
+cap "crsl_d_flip_flop_0/Q" "crsl_d_flip_flop_2/D_BAR" 0.659795
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_1/a_n150_n2570#" 22.4582
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_1/D_BAR" 4.03762
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_1/Q" 0.121563
+cap "crsl_d_flip_flop_0/a_n150_n2570#" "crsl_d_flip_flop_1/a_n70_n2490#" 0.659795
+cap "crsl_d_flip_flop_1/a_40_n2540#" "crsl_d_flip_flop_0/a_40_n2540#" 5.14559
+cap "crsl_d_flip_flop_0/Q" "crsl_d_flip_flop_1/a_40_n2540#" 0.186829
+cap "crsl_d_flip_flop_2/a_n70_n2490#" "crsl_d_flip_flop_1/a_40_n2540#" 12.6501
+cap "crsl_d_flip_flop_1/D_BAR" "crsl_d_flip_flop_1/Q" 5.43462
+cap "crsl_d_flip_flop_3/a_n150_n2570#" "crsl_d_flip_flop_2/a_n70_n2490#" 0.239861
+cap "crsl_d_flip_flop_2/Q" "crsl_d_flip_flop_1/Q" 7.12541
+cap "crsl_d_flip_flop_3/Q" "crsl_d_flip_flop_3/VN" 0.594463
+cap "crsl_d_flip_flop_3/a_n70_n2490#" "crsl_d_flip_flop_3/D_BAR" 5.16187
+cap "crsl_d_flip_flop_2/a_n150_n2570#" "crsl_d_flip_flop_1/a_40_n2540#" 18.3203
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_3/D_BAR" 54.6141
+cap "crsl_d_flip_flop_3/a_40_n2540#" "crsl_d_flip_flop_2/a_40_n2540#" 5.3519
+cap "crsl_d_flip_flop_1/a_n150_n2570#" "crsl_d_flip_flop_2/a_n70_n2490#" 0.659795
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_3/D_BAR" 4.70429
+cap "crsl_d_flip_flop_3/a_n70_n2490#" "crsl_d_flip_flop_2/Q" 2.01701
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_1/Q" 18.7892
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_2/Q" 18.9108
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_1/Q" -5.68434e-14
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_1/D_BAR" 0.666667
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_2/Q" 12.2209
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_1/a_n70_n2490#" 1.16095
+cap "crsl_d_flip_flop_3/D_BAR" "crsl_d_flip_flop_2/a_40_n2540#" -3.55271e-15
+cap "crsl_d_flip_flop_3/a_n70_n2490#" "crsl_d_flip_flop_3/VN" 9.97906
+cap "crsl_d_flip_flop_1/Q" "crsl_d_flip_flop_2/a_40_n2540#" 0.202749
+cap "crsl_d_flip_flop_2/Q" "crsl_d_flip_flop_2/a_40_n2540#" 2.84217e-14
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_3/VN" 54.6141
+cap "crsl_d_flip_flop_0/Q" "crsl_d_flip_flop_1/a_40_n2540#" 0.0159201
+cap "crsl_d_flip_flop_2/a_n70_n2490#" "crsl_d_flip_flop_1/Q" 2.01701
+cap "crsl_d_flip_flop_3/a_n150_n2570#" "crsl_d_flip_flop_3/D_BAR" 188.081
+cap "crsl_d_flip_flop_1/Q" "crsl_d_flip_flop_1/a_40_n2540#" 2.84217e-14
+cap "crsl_d_flip_flop_1/D_BAR" "crsl_d_flip_flop_1/a_40_n2540#" 0.0213496
+cap "crsl_d_flip_flop_3/a_n150_n2570#" "crsl_d_flip_flop_2/Q" 1.51424
+cap "crsl_d_flip_flop_3/a_10_n1210#" "crsl_d_flip_flop_2/a_40_n2540#" 0.0733646
+cap "crsl_d_flip_flop_0/a_40_n2540#" "crsl_d_flip_flop_1/a_40_n2540#" 0.206311
+cap "crsl_d_flip_flop_3/a_n70_n2490#" "crsl_d_flip_flop_2/a_40_n2540#" 12.6501
+cap "crsl_d_flip_flop_2/a_n70_n2490#" "crsl_d_flip_flop_1/a_n70_n2490#" 6.49586
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_2/a_40_n2540#" 43.5922
+cap "crsl_d_flip_flop_2/a_n150_n2570#" "crsl_d_flip_flop_1/Q" 1.51424
+cap "crsl_d_flip_flop_3/a_n70_n2490#" "crsl_d_flip_flop_2/a_n70_n2490#" 7.52741
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_2/a_40_n2540#" 0.60813
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_2/a_n70_n2490#" 11.3877
+cap "crsl_d_flip_flop_3/Q_BAR" "crsl_d_flip_flop_3/D_BAR" 4.03762
+cap "crsl_d_flip_flop_2/a_10_n1210#" "crsl_d_flip_flop_1/a_40_n2540#" 0.0733646
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_2/a_n70_n2490#" 5.16187
+cap "crsl_d_flip_flop_3/a_40_n2540#" "crsl_d_flip_flop_3/D_BAR" 0.60813
+cap "crsl_d_flip_flop_3/Q_BAR" "crsl_d_flip_flop_2/Q" 0.659795
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_1/a_40_n2540#" 42.3773
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_3/a_n150_n2570#" 22.4582
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_1/a_40_n2540#" -3.55271e-15
+cap "crsl_d_flip_flop_3/a_40_n2540#" "crsl_d_flip_flop_2/Q" 0.202749
+cap "crsl_d_flip_flop_3/a_n70_n2490#" "crsl_d_flip_flop_2/a_n150_n2570#" 0.659795
+cap "crsl_d_flip_flop_3/Q" "crsl_d_flip_flop_3/D_BAR" 12.2209
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_2/a_n150_n2570#" 22.4582
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_2/a_n150_n2570#" 188.081
+cap "crsl_d_flip_flop_3/Q" "crsl_d_flip_flop_2/Q" 7.12541
+cap "crsl_d_flip_flop_0/Q" "crsl_d_flip_flop_1/Q" 1.03155
+cap "crsl_d_flip_flop_1/a_40_n2540#" "crsl_d_flip_flop_2/a_40_n2540#" 5.3519
+cap "crsl_d_flip_flop_3/a_n150_n2570#" "crsl_d_flip_flop_2/a_40_n2540#" 18.3203
+cap "crsl_d_flip_flop_3/D_BAR" "crsl_d_flip_flop_1/Q" 0.659795
+cap "crsl_d_flip_flop_3/a_40_n2540#" "crsl_d_flip_flop_3/VN" 1.26912
+cap "crsl_d_flip_flop_3/D_BAR" "crsl_d_flip_flop_2/Q" -5.68434e-14
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_3/Q_BAR" 0.0453837
+cap "crsl_d_flip_flop_3/D_BAR" "crsl_d_flip_flop_3/Q_BAR" 0.666667
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_0/a_n70_n2490#" 2.80487
+cap "crsl_d_flip_flop_3/D" "crsl_d_flip_flop_3/VN" 0.0772653
+cap "crsl_d_flip_flop_0/a_40_n2540#" "crsl_d_flip_flop_1/a_n70_n2490#" 0.242633
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_1/a_n70_n2490#" 1.28213
+cap "crsl_d_flip_flop_0/a_n70_n2490#" "crsl_d_flip_flop_1/D_BAR" 1.42109e-14
+cap "crsl_d_flip_flop_2/D" "crsl_d_flip_flop_3/VP" 0.321487
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_2/a_10_n1210#" 0.117921
+cap "crsl_d_flip_flop_2/D" "crsl_d_flip_flop_1/D_BAR" 9.74382
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_1/a_n70_n2490#" 7.10543e-15
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_1/a_n70_n2490#" 0.312278
+cap "crsl_d_flip_flop_0/a_10_n1210#" "crsl_d_flip_flop_0/D_BAR" 2.37846
+cap "crsl_d_flip_flop_1/D_BAR" "crsl_d_flip_flop_1/a_n70_n2490#" 19.3162
+cap "crsl_d_flip_flop_0/a_40_n2540#" "crsl_d_flip_flop_1/a_n150_n2570#" 0.375154
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_2/a_10_n1210#" 0.0494115
+cap "crsl_d_flip_flop_1/a_n150_n2570#" "crsl_d_flip_flop_3/VN" 7.00385
+cap "crsl_d_flip_flop_2/a_n150_n2570#" "crsl_d_flip_flop_3/VN" 0.309089
+cap "crsl_d_flip_flop_0/D" "crsl_d_flip_flop_3/VN" -1.3143
+cap "crsl_d_flip_flop_0/a_n150_n2570#" "crsl_d_flip_flop_0/D" 42.8082
+cap "crsl_d_flip_flop_1/a_n150_n2570#" "crsl_d_flip_flop_3/CLK" 9.0372
+cap "crsl_d_flip_flop_1/a_n150_n2570#" "crsl_d_flip_flop_3/VP" 51.5169
+cap "crsl_d_flip_flop_1/a_n150_n2570#" "crsl_d_flip_flop_1/D_BAR" 86.4181
+cap "crsl_d_flip_flop_2/a_n70_n2490#" "crsl_d_flip_flop_3/VN" 0.34437
+cap "crsl_d_flip_flop_2/a_n150_n2570#" "crsl_d_flip_flop_3/VP" 0.142718
+cap "crsl_d_flip_flop_0/D" "crsl_d_flip_flop_3/CLK" 12.6751
+cap "crsl_d_flip_flop_0/D" "crsl_d_flip_flop_3/VP" 34.3334
+cap "crsl_d_flip_flop_0/D" "crsl_d_flip_flop_1/D_BAR" 0.0557773
+cap "crsl_d_flip_flop_1/D" "crsl_d_flip_flop_3/VN" 5.6668
+cap "crsl_d_flip_flop_0/a_n150_n2570#" "crsl_d_flip_flop_0/D_BAR" 90.8316
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_0/D_BAR" 2.2807
+cap "crsl_d_flip_flop_2/a_n70_n2490#" "crsl_d_flip_flop_3/VP" 0.101567
+cap "crsl_d_flip_flop_0/a_10_n1210#" "crsl_d_flip_flop_3/VN" 5.01461
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_1/D" 0.360437
+cap "crsl_d_flip_flop_0/D" "crsl_d_flip_flop_0/a_n70_n2490#" 0.414451
+cap "crsl_d_flip_flop_1/D" "crsl_d_flip_flop_3/CLK" 0.317131
+cap "crsl_d_flip_flop_1/D" "crsl_d_flip_flop_3/VP" 9.63617
+cap "crsl_d_flip_flop_0/D_BAR" "crsl_d_flip_flop_3/CLK" 42.6444
+cap "crsl_d_flip_flop_0/D_BAR" "crsl_d_flip_flop_3/VP" 18.826
+cap "crsl_d_flip_flop_1/a_40_n2540#" "crsl_d_flip_flop_1/D_BAR" 0.139321
+cap "crsl_d_flip_flop_1/D" "crsl_d_flip_flop_1/D_BAR" 0.724544
+cap "crsl_d_flip_flop_0/D_BAR" "crsl_d_flip_flop_1/D_BAR" 16.8363
+cap "crsl_d_flip_flop_0/a_10_n1210#" "crsl_d_flip_flop_3/VP" 2.23805
+cap "crsl_d_flip_flop_0/D_BAR" "crsl_d_flip_flop_0/a_n70_n2490#" 5.58313
+cap "crsl_d_flip_flop_0/a_40_n2540#" "crsl_d_flip_flop_3/VN" 5.08095
+cap "crsl_d_flip_flop_3/D_BAR" "crsl_d_flip_flop_3/VN" 0.0865495
+cap "crsl_d_flip_flop_0/a_n150_n2570#" "crsl_d_flip_flop_3/VN" 19.2544
+cap "crsl_d_flip_flop_1/D" "crsl_d_flip_flop_1/a_n70_n2490#" 1.29855
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_3/VN" 0.77111
+cap "crsl_d_flip_flop_0/a_n150_n2570#" "crsl_d_flip_flop_3/CLK" 5.58382
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_3/CLK" 95.8955
+cap "crsl_d_flip_flop_0/a_n150_n2570#" "crsl_d_flip_flop_3/VP" 63.6516
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_1/a_10_n1210#" 0.890245
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_3/VP" -46.3893
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_1/D_BAR" 46.2209
+cap "crsl_d_flip_flop_0/a_n150_n2570#" "crsl_d_flip_flop_1/D_BAR" -1.42109e-14
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_3/VP" 0.360953
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_3/CLK" 104.84
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_1/a_10_n1210#" 0.40184
+cap "crsl_d_flip_flop_1/D" "crsl_d_flip_flop_1/a_n150_n2570#" 182.959
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_1/D_BAR" 11.528
+cap "crsl_d_flip_flop_3/CLK" "crsl_d_flip_flop_1/D_BAR" 0.514078
+cap "crsl_d_flip_flop_0/a_n150_n2570#" "crsl_d_flip_flop_0/a_n70_n2490#" 1.13687e-13
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_0/a_n70_n2490#" 13.1907
+cap "crsl_d_flip_flop_1/a_10_n1210#" "crsl_d_flip_flop_1/D_BAR" 3.30965
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_1/D_BAR" 14.8758
+cap "crsl_d_flip_flop_2/D" "crsl_d_flip_flop_3/VN" 0.802904
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_2/D" 0.817921
+cap "crsl_d_flip_flop_2/a_n70_n2490#" "crsl_d_flip_flop_1/a_40_n2540#" 0.242633
+cap "crsl_d_flip_flop_3/D_BAR" "crsl_d_flip_flop_3/Q" 12.048
+cap "crsl_d_flip_flop_3/a_n150_n2570#" "crsl_d_flip_flop_3/VN" 5.91488
+cap "crsl_d_flip_flop_3/D" "crsl_d_flip_flop_3/VN" 0.817921
+cap "crsl_d_flip_flop_1/a_10_n1210#" "crsl_d_flip_flop_3/VP" 2.84217e-14
+cap "crsl_d_flip_flop_2/a_n150_n2570#" "crsl_d_flip_flop_2/D" 182.959
+cap "crsl_d_flip_flop_2/a_40_n2540#" "crsl_d_flip_flop_3/VN" 5.08095
+cap "crsl_d_flip_flop_3/a_10_n1210#" "crsl_d_flip_flop_3/D_BAR" 3.30965
+cap "crsl_d_flip_flop_2/a_n150_n2570#" "crsl_d_flip_flop_3/VP" 50.9801
+cap "crsl_d_flip_flop_3/D_BAR" "crsl_d_flip_flop_3/CLK" 0.514078
+cap "crsl_d_flip_flop_1/D" "crsl_d_flip_flop_2/D_BAR" 0.379014
+cap "crsl_d_flip_flop_3/D_BAR" "crsl_d_flip_flop_3/a_40_n2540#" 0.139321
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_1/a_40_n2540#" 5.08095
+cap "crsl_d_flip_flop_2/a_n150_n2570#" "crsl_d_flip_flop_3/VN" 5.91488
+cap "crsl_d_flip_flop_3/D_BAR" "crsl_d_flip_flop_2/D_BAR" 17.2211
+cap "crsl_d_flip_flop_3/a_n70_n2490#" "crsl_d_flip_flop_3/D" 1.29855
+cap "crsl_d_flip_flop_3/a_n70_n2490#" "crsl_d_flip_flop_2/a_40_n2540#" 0.242633
+cap "crsl_d_flip_flop_3/a_n70_n2490#" "crsl_d_flip_flop_3/VP" 2.84217e-14
+cap "crsl_d_flip_flop_2/a_n150_n2570#" "crsl_d_flip_flop_1/a_40_n2540#" 0.375154
+cap "crsl_d_flip_flop_3/Q_BAR" "crsl_d_flip_flop_3/D" 0.739452
+cap "crsl_d_flip_flop_3/D_BAR" "crsl_d_flip_flop_2/D" 0.739452
+cap "crsl_d_flip_flop_1/D_BAR" "crsl_d_flip_flop_2/D_BAR" 5.6931
+cap "crsl_d_flip_flop_3/Q_BAR" "crsl_d_flip_flop_3/VP" 1.51623
+cap "crsl_d_flip_flop_3/CLK" "crsl_d_flip_flop_2/D_BAR" 0.514078
+cap "crsl_d_flip_flop_3/D_BAR" "crsl_d_flip_flop_3/a_n150_n2570#" 86.4181
+cap "crsl_d_flip_flop_3/D" "crsl_d_flip_flop_3/D_BAR" 0.724544
+cap "crsl_d_flip_flop_3/D_BAR" "crsl_d_flip_flop_3/VP" 13.1426
+cap "crsl_d_flip_flop_1/D_BAR" "crsl_d_flip_flop_2/D" 2.30422
+cap "crsl_d_flip_flop_3/CLK" "crsl_d_flip_flop_2/D" 0.317131
+cap "crsl_d_flip_flop_2/a_n70_n2490#" "crsl_d_flip_flop_2/D_BAR" 19.3162
+cap "crsl_d_flip_flop_3/Q" "crsl_d_flip_flop_3/VN" 0.028955
+cap "crsl_d_flip_flop_3/CLK" "crsl_d_flip_flop_3/a_n150_n2570#" 9.0372
+cap "crsl_d_flip_flop_3/D_BAR" "crsl_d_flip_flop_3/VN" 41.5417
+cap "crsl_d_flip_flop_3/D" "crsl_d_flip_flop_3/CLK" 0.317131
+cap "crsl_d_flip_flop_2/D" "crsl_d_flip_flop_2/D_BAR" 0.724544
+cap "crsl_d_flip_flop_3/a_10_n1210#" "crsl_d_flip_flop_3/VP" 2.84217e-14
+cap "crsl_d_flip_flop_2/a_10_n1210#" "crsl_d_flip_flop_2/D_BAR" 3.30965
+cap "crsl_d_flip_flop_3/CLK" "crsl_d_flip_flop_3/VP" 7.10543e-15
+cap "crsl_d_flip_flop_3/D" "crsl_d_flip_flop_2/D_BAR" 12.048
+cap "crsl_d_flip_flop_2/a_n70_n2490#" "crsl_d_flip_flop_2/D" 1.29855
+cap "crsl_d_flip_flop_2/a_40_n2540#" "crsl_d_flip_flop_2/D_BAR" 0.139321
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_2/D_BAR" 13.1426
+cap "crsl_d_flip_flop_3/CLK" "crsl_d_flip_flop_3/VN" -7.10543e-15
+cap "crsl_d_flip_flop_2/a_n70_n2490#" "crsl_d_flip_flop_3/VP" 2.84217e-14
+cap "crsl_d_flip_flop_3/VN" "crsl_d_flip_flop_2/D_BAR" 41.5417
+cap "crsl_d_flip_flop_3/D" "crsl_d_flip_flop_3/a_n150_n2570#" 182.959
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_2/D" 8.30208
+cap "crsl_d_flip_flop_2/a_n150_n2570#" "crsl_d_flip_flop_3/CLK" 9.0372
+cap "crsl_d_flip_flop_3/a_n70_n2490#" "crsl_d_flip_flop_3/D_BAR" 19.3162
+cap "crsl_d_flip_flop_2/a_40_n2540#" "crsl_d_flip_flop_3/a_n150_n2570#" 0.375154
+cap "crsl_d_flip_flop_2/a_10_n1210#" "crsl_d_flip_flop_3/VP" 2.84217e-14
+cap "crsl_d_flip_flop_3/a_n150_n2570#" "crsl_d_flip_flop_3/VP" 50.9801
+cap "crsl_d_flip_flop_3/D" "crsl_d_flip_flop_3/VP" 8.30208
+cap "crsl_d_flip_flop_2/a_n150_n2570#" "crsl_d_flip_flop_2/D_BAR" 86.4181
+cap "crsl_d_flip_flop_3/Q_BAR" "crsl_d_flip_flop_3/D_BAR" 17.2211
+cap "crsl_d_flip_flop_3/Q_BAR" "crsl_d_flip_flop_3/Q" -9.44444
+cap "crsl_d_flip_flop_1/a_40_60#" "crsl_d_flip_flop_0/a_40_60#" 0.412621
+cap "crsl_d_flip_flop_1/a_40_60#" "crsl_d_flip_flop_2/a_40_60#" 0.206311
+cap "crsl_d_flip_flop_1/D" "crsl_d_flip_flop_1/a_10_n1210#" 2.58597
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_0/a_10_n1210#" 1.99889
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_2/a_n150_n2570#" 5.49867
+cap "crsl_d_flip_flop_2/a_n70_n2490#" "crsl_d_flip_flop_3/VP" 0.199442
+cap "crsl_d_flip_flop_1/a_40_60#" "crsl_d_flip_flop_1/D" 35.7908
+cap "crsl_d_flip_flop_1/a_40_60#" "crsl_d_flip_flop_1/D_BAR" 10.4165
+cap "crsl_d_flip_flop_0/D" "crsl_d_flip_flop_3/VP" 4.96462
+cap "crsl_d_flip_flop_0/a_n150_n2570#" "crsl_d_flip_flop_1/a_n150_n2570#" 4.70429
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_1/a_10_n1210#" 0.359526
+cap "crsl_d_flip_flop_1/a_40_60#" "crsl_d_flip_flop_1/a_n150_n2570#" -3.55271e-15
+cap "crsl_d_flip_flop_0/a_n150_n2570#" "crsl_d_flip_flop_3/VP" 6.70156
+cap "crsl_d_flip_flop_2/a_10_n1210#" "crsl_d_flip_flop_3/VP" 0.0449965
+cap "crsl_d_flip_flop_1/a_40_60#" "crsl_d_flip_flop_3/VP" 14.5302
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_2/a_n70_n2490#" 1.69332
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_0/a_n150_n2570#" 0.659795
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_1/a_40_60#" -7.10543e-15
+cap "crsl_d_flip_flop_1/a_40_60#" "crsl_d_flip_flop_2/a_n150_n2570#" 0.0213496
+cap "crsl_d_flip_flop_0/a_n70_n2490#" "crsl_d_flip_flop_1/a_n150_n2570#" 12.285
+cap "crsl_d_flip_flop_3/CLK" "crsl_d_flip_flop_3/VP" -0.333333
+cap "crsl_d_flip_flop_1/a_n150_n2570#" "crsl_d_flip_flop_0/a_40_60#" 0.0213496
+cap "crsl_d_flip_flop_0/a_n70_n2490#" "crsl_d_flip_flop_3/VP" 12.684
+cap "crsl_d_flip_flop_1/D" "crsl_d_flip_flop_2/D_BAR" 3.51378
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_1/D_BAR" 6.09386
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_0/a_40_60#" 0.13286
+cap "crsl_d_flip_flop_0/a_n150_n2570#" "crsl_d_flip_flop_0/D" 2.25183
+cap "crsl_d_flip_flop_1/a_n150_n2570#" "crsl_d_flip_flop_1/D_BAR" 4.66811
+cap "crsl_d_flip_flop_1/a_40_60#" "crsl_d_flip_flop_2/a_n70_n2490#" 0.0159201
+cap "crsl_d_flip_flop_1/D" "crsl_d_flip_flop_1/a_n150_n2570#" 234.235
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_3/VP" 4.94518
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_1/D_BAR" 16.8979
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_0/a_n70_n2490#" 9.38005
+cap "crsl_d_flip_flop_1/D" "crsl_d_flip_flop_3/VP" 99.6418
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_0/a_40_60#" 0.0159201
+cap "crsl_d_flip_flop_1/D_BAR" "crsl_d_flip_flop_2/D" 0.659795
+cap "crsl_d_flip_flop_1/a_n150_n2570#" "crsl_d_flip_flop_3/VP" 204.626
+cap "crsl_d_flip_flop_0/D_BAR" "crsl_d_flip_flop_3/VP" 0.174919
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_2/D" 0.263165
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_1/D_BAR" 1.84013
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_1/D" 25.8716
+cap "crsl_d_flip_flop_2/a_n150_n2570#" "crsl_d_flip_flop_1/a_n150_n2570#" 0.666667
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_3/VP" 32.3148
+cap "crsl_d_flip_flop_2/a_n150_n2570#" "crsl_d_flip_flop_3/VP" 0.117847
+cap "crsl_d_flip_flop_0/a_n70_n2490#" "crsl_d_flip_flop_0/D" 0.13815
+cap "crsl_d_flip_flop_0/a_n70_n2490#" "crsl_d_flip_flop_0/a_n150_n2570#" -1.13687e-13
+cap "crsl_d_flip_flop_2/a_40_60#" "crsl_d_flip_flop_3/a_40_60#" 0.412621
+cap "crsl_d_flip_flop_3/a_n70_n2490#" "crsl_d_flip_flop_2/a_n150_n2570#" 0.659795
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_2/a_40_60#" 10.4165
+cap "crsl_d_flip_flop_3/a_n150_n2570#" "crsl_d_flip_flop_3/D_BAR" 4.66811
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_3/a_40_60#" 14.3973
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_3/VP" 17.4767
+cap "crsl_d_flip_flop_3/a_n150_n2570#" "crsl_d_flip_flop_2/a_n70_n2490#" 12.285
+cap "crsl_d_flip_flop_3/a_40_60#" "crsl_d_flip_flop_3/D_BAR" 10.4165
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_3/D_BAR" 7.12541
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_3/CLK" -3.55271e-15
+cap "crsl_d_flip_flop_3/a_n150_n2570#" "crsl_d_flip_flop_3/D" 234.235
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_1/a_n70_n2490#" 2.71697
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_2/a_n70_n2490#" 1.84013
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_1/D" 3.75364
+cap "crsl_d_flip_flop_2/a_40_60#" "crsl_d_flip_flop_2/a_n150_n2570#" -3.55271e-15
+cap "crsl_d_flip_flop_2/a_40_60#" "crsl_d_flip_flop_3/a_n70_n2490#" 0.0159201
+cap "crsl_d_flip_flop_3/D" "crsl_d_flip_flop_3/a_40_60#" 35.7908
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_3/Q_BAR" 6.0859
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_3/D" 0.659795
+cap "crsl_d_flip_flop_3/a_n150_n2570#" "crsl_d_flip_flop_3/a_40_60#" -3.55271e-15
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_2/a_n150_n2570#" 204.439
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_3/a_n70_n2490#" 30.0349
+cap "crsl_d_flip_flop_1/a_n150_n2570#" "crsl_d_flip_flop_2/a_n150_n2570#" 4.03762
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_2/a_n70_n2490#" 7.68673
+cap "crsl_d_flip_flop_2/D" "crsl_d_flip_flop_2/a_n150_n2570#" 234.235
+cap "crsl_d_flip_flop_3/Q_BAR" "crsl_d_flip_flop_3/D_BAR" 7.12541
+cap "crsl_d_flip_flop_3/a_n70_n2490#" "crsl_d_flip_flop_3/D_BAR" 1.84013
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_1/a_10_n1210#" -2.84217e-14
+cap "crsl_d_flip_flop_2/a_n70_n2490#" "crsl_d_flip_flop_2/a_n150_n2570#" -1.13687e-13
+cap "crsl_d_flip_flop_2/a_n70_n2490#" "crsl_d_flip_flop_3/a_n70_n2490#" 9.38005
+cap "crsl_d_flip_flop_3/D" "crsl_d_flip_flop_3/Q_BAR" 7.26742
+cap "crsl_d_flip_flop_3/D" "crsl_d_flip_flop_3/a_n70_n2490#" 25.8716
+cap "crsl_d_flip_flop_3/a_n150_n2570#" "crsl_d_flip_flop_2/a_n150_n2570#" 4.70429
+cap "crsl_d_flip_flop_2/D" "crsl_d_flip_flop_2/a_10_n1210#" 2.58597
+cap "crsl_d_flip_flop_3/a_n150_n2570#" "crsl_d_flip_flop_3/a_n70_n2490#" -1.13687e-13
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_2/a_40_60#" 14.5302
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_1/a_n150_n2570#" 0.203797
+cap "crsl_d_flip_flop_2/D" "crsl_d_flip_flop_2/a_40_60#" 35.7908
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_2/D" 98.551
+cap "crsl_d_flip_flop_3/a_40_60#" "crsl_d_flip_flop_3/a_n70_n2490#" -7.10543e-15
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_2/a_n150_n2570#" 4.66811
+cap "crsl_d_flip_flop_1/a_40_60#" "crsl_d_flip_flop_2/a_40_60#" 0.206311
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_3/D_BAR" 22.3121
+cap "crsl_d_flip_flop_3/a_10_n1210#" "crsl_d_flip_flop_3/D" 2.58597
+cap "crsl_d_flip_flop_2/a_40_60#" "crsl_d_flip_flop_2/a_n70_n2490#" -7.10543e-15
+cap "crsl_d_flip_flop_2/D_BAR" "crsl_d_flip_flop_1/D_BAR" 1.03155
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_2/a_n70_n2490#" 34.1949
+cap "crsl_d_flip_flop_2/D" "crsl_d_flip_flop_3/D_BAR" 7.26742
+cap "crsl_d_flip_flop_2/a_n70_n2490#" "crsl_d_flip_flop_1/a_n150_n2570#" 0.659795
+cap "crsl_d_flip_flop_3/Q" "crsl_d_flip_flop_3/D_BAR" 0.659795
+cap "crsl_d_flip_flop_1/a_n70_n2490#" "crsl_d_flip_flop_2/a_n150_n2570#" 6.78629
+cap "crsl_d_flip_flop_2/a_40_60#" "crsl_d_flip_flop_3/a_n150_n2570#" 0.0213496
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_3/D" 98.551
+cap "crsl_d_flip_flop_2/D" "crsl_d_flip_flop_2/a_n70_n2490#" 25.8716
+cap "crsl_d_flip_flop_3/VP" "crsl_d_flip_flop_3/a_n150_n2570#" 204.159
+merge "crsl_d_flip_flop_0/VN" "crsl_d_flip_flop_1/VN" -2327.89 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9640 0 0 0 0 0 0 0 0 0 0
+merge "crsl_d_flip_flop_1/VN" "crsl_d_flip_flop_2/VN"
+merge "crsl_d_flip_flop_2/VN" "crsl_d_flip_flop_3/VN"
+merge "crsl_d_flip_flop_3/VN" "inverter_1/a_n190_n190#"
+merge "inverter_1/a_n190_n190#" "VSUBS"
+merge "VSUBS" "VN"
+merge "crsl_d_flip_flop_0/D_BAR" "inverter_1/a_40_n190#" -118.774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "crsl_d_flip_flop_0/CLK" "CLK" -248.801 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -640 0 0 0 0 0 0 0 0 0 0
+merge "CLK" "crsl_d_flip_flop_1/CLK"
+merge "crsl_d_flip_flop_1/CLK" "crsl_d_flip_flop_2/CLK"
+merge "crsl_d_flip_flop_2/CLK" "crsl_d_flip_flop_3/CLK"
+merge "crsl_d_flip_flop_3/Q" "Q" -41.4355 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "crsl_d_flip_flop_0/VP" "inverter_1/w_n230_250#" -1552.89 0 0 0 0 0 -11240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6100 0 0 0 0 0 0 0 0 0 0
+merge "inverter_1/w_n230_250#" "VP"
+merge "VP" "crsl_d_flip_flop_1/VP"
+merge "crsl_d_flip_flop_1/VP" "crsl_d_flip_flop_2/VP"
+merge "crsl_d_flip_flop_2/VP" "crsl_d_flip_flop_3/VP"
+merge "crsl_d_flip_flop_1/Q" "crsl_d_flip_flop_2/D" -473.906 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "crsl_d_flip_flop_0/D" "inverter_1/a_n40_520#" -100.979 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -240 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_1/a_n40_520#" "D"
+merge "crsl_d_flip_flop_2/Q_BAR" "crsl_d_flip_flop_3/D_BAR" -443.03 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "crsl_d_flip_flop_3/Q_BAR" "Q_BAR" -78.1963 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "crsl_d_flip_flop_1/Q_BAR" "crsl_d_flip_flop_2/D_BAR" -443.03 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "crsl_d_flip_flop_0/Q_BAR" "crsl_d_flip_flop_1/D_BAR" -413.979 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "crsl_d_flip_flop_2/Q" "crsl_d_flip_flop_3/D" -473.906 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "crsl_d_flip_flop_0/Q" "crsl_d_flip_flop_1/D" -459.861 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
