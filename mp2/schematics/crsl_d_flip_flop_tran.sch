@@ -5,10 +5,6 @@ K {}
 V {}
 S {}
 E {}
-N 470 -80 490 -80 {
-lab=Q4}
-N 470 -40 490 -40 {
-lab=Q4_BAR}
 N 430 -120 430 -100 {
 lab=VDD}
 N 430 -20 430 0 {
@@ -71,6 +67,16 @@ N 400 -40 400 -30 {
 lab=Q3_BAR}
 N 240 -40 240 -30 {
 lab=Q1_BAR}
+N 470 -80 490 -80 {
+lab=Q4}
+N 470 -40 490 -40 {
+lab=Q4_BAR}
+N 190 130 190 140 {
+lab=VDD}
+N 190 200 190 210 {
+lab=GND}
+N 160 170 170 170 {
+lab=D}
 C {madvlsi/vsource.sym} -70 110 0 0 {name=V1
 value="pulse(0 1.8 1ns 1ns 1ns 200ns 400ns)"}
 C {/home/madvlsi/Documents/VLSI/mp2/schematics/crsl_d_flip_flop.sym} 350 -80 0 0 {name=X4}
@@ -89,8 +95,6 @@ value="pulse(0 1.8 1ns 1ns 1ns 50ns 100ns)"}
 C {devices/lab_pin.sym} -70 200 0 0 {name=p4 sig_type=std_logic lab=CLK}
 C {madvlsi/gnd.sym} -70 260 0 0 {name=l6 lab=GND}
 C {madvlsi/vdd.sym} 190 130 0 0 {name=l7 lab=VDD}
-C {devices/lab_pin.sym} 490 -80 2 0 {name=p6 sig_type=std_logic lab=Q4}
-C {devices/lab_pin.sym} 490 -40 2 0 {name=p7 sig_type=std_logic lab=Q4_BAR}
 C {madvlsi/tt_models.sym} -100 -190 0 0 {
 name=TT_MODELS
 only_toplevel=false
@@ -113,3 +117,5 @@ C {devices/lab_pin.sym} 400 -90 1 0 {name=p12 sig_type=std_logic lab=Q3}
 C {devices/lab_pin.sym} 240 -30 3 0 {name=p13 sig_type=std_logic lab=Q1_BAR}
 C {devices/lab_pin.sym} 320 -30 3 0 {name=p14 sig_type=std_logic lab=Q2_BAR}
 C {devices/lab_pin.sym} 400 -30 3 0 {name=p15 sig_type=std_logic lab=Q3_BAR}
+C {devices/lab_pin.sym} 490 -80 2 0 {name=p6 sig_type=std_logic lab=Q4}
+C {devices/lab_pin.sym} 490 -40 2 0 {name=p7 sig_type=std_logic lab=Q4_BAR}

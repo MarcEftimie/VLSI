@@ -1,0 +1,70 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: crsl_d_flip_flop                |Circuit 2: crsl_d_flip_flop                
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (7)                |sky130_fd_pr__pfet_01v8 (7)                
+sky130_fd_pr__nfet_01v8 (7)                |sky130_fd_pr__nfet_01v8 (7)                
+Number of devices: 14                      |Number of devices: 14                      
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: crsl_d_flip_flop                |Circuit 2: crsl_d_flip_flop                
+-------------------------------------------|-------------------------------------------
+D                                          |D                                          
+D_BAR                                      |D_BAR                                      
+Q                                          |Q                                          
+Q_BAR                                      |Q_BAR                                      
+CLK                                        |CLK                                        
+VP                                         |VP                                         
+VN                                         |VN                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes crsl_d_flip_flop and crsl_d_flip_flop are equivalent.
+
+Subcircuit summary:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VP                                         |VP                                         
+VN                                         |VN                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inverter and inverter are equivalent.
+
+Subcircuit summary:
+Circuit 1: shift_register.spice            |Circuit 2: 4_bit_shift_register.spice      
+-------------------------------------------|-------------------------------------------
+crsl_d_flip_flop (4)                       |crsl_d_flip_flop (4)                       
+inverter (1)                               |inverter (1)                               
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes shift_register.spice and 4_bit_shift_register.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.
