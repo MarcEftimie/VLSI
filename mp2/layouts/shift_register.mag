@@ -1,8 +1,26 @@
 magic
 tech sky130A
-timestamp 1695762812
+timestamp 1695775050
+<< error_s >>
+rect -5 1165 0 1174
 use crsl_d_flip_flop  crsl_d_flip_flop_0
 timestamp 1695762812
 transform 1 0 80 0 1 1510
 box -85 -1545 230 545
+use crsl_d_flip_flop  crsl_d_flip_flop_1
+timestamp 1695762812
+transform 1 0 395 0 1 1510
+box -85 -1545 230 545
+use crsl_d_flip_flop  crsl_d_flip_flop_2
+timestamp 1695762812
+transform 1 0 710 0 1 1510
+box -85 -1545 230 545
+use crsl_d_flip_flop  crsl_d_flip_flop_3
+timestamp 1695762812
+transform 1 0 1025 0 1 1510
+box -85 -1545 230 545
+use inverter  inverter_0
+timestamp 1695775050
+transform 1 0 -95 0 1 1075
+box -115 -50 90 300
 << end >>
