@@ -55,7 +55,7 @@ Cell pin lists are equivalent.
 Device classes inverter and inverter are equivalent.
 
 Subcircuit summary:
-Circuit 1: shift_register.spice            |Circuit 2: 4_bit_shift_register.spice      
+Circuit 1: 4_bit_shift_register.spice      |Circuit 2: 4_bit_shift_register_xschem.spi 
 -------------------------------------------|-------------------------------------------
 crsl_d_flip_flop (4)                       |crsl_d_flip_flop (4)                       
 inverter (1)                               |inverter (1)                               
@@ -64,7 +64,7 @@ Number of nets: 13                         |Number of nets: 13
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 Cells have no pins;  pin matching not needed.
-Device classes shift_register.spice and 4_bit_shift_register.spice are equivalent.
+Device classes 4_bit_shift_register.spice and 4_bit_shift_register_xschem.spice are equivalent.
 
 Final result: Circuits match uniquely.
 .

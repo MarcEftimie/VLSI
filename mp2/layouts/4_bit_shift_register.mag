@@ -1,0 +1,42 @@
+magic
+tech sky130A
+timestamp 1695855928
+<< locali >>
+rect -75 1335 -5 1355
+rect 1255 1335 1275 1355
+rect -30 1275 -5 1295
+rect 1255 1275 1275 1295
+<< metal1 >>
+rect -50 1475 -5 1495
+rect -50 1320 -30 1475
+rect -210 1130 -5 1170
+rect -50 820 -30 980
+rect -50 800 -5 820
+use crsl_d_flip_flop  crsl_d_flip_flop_0
+timestamp 1695854697
+transform 1 0 80 0 1 1510
+box -85 -1545 230 545
+use crsl_d_flip_flop  crsl_d_flip_flop_1
+timestamp 1695854697
+transform 1 0 395 0 1 1510
+box -85 -1545 230 545
+use crsl_d_flip_flop  crsl_d_flip_flop_2
+timestamp 1695854697
+transform 1 0 710 0 1 1510
+box -85 -1545 230 545
+use crsl_d_flip_flop  crsl_d_flip_flop_3
+timestamp 1695854697
+transform 1 0 1025 0 1 1510
+box -85 -1545 230 545
+use inverter  inverter_0
+timestamp 1695849814
+transform 1 0 -95 0 1 1075
+box -115 -110 90 300
+<< labels >>
+rlabel metal1 -50 1485 -50 1485 7 VP
+rlabel metal1 -50 810 -50 810 7 VN
+rlabel metal1 -210 1150 -210 1150 7 CLK
+rlabel locali 1275 1285 1275 1285 3 Q_BAR
+rlabel locali 1275 1345 1275 1345 3 Q
+rlabel space -210 1345 -210 1345 7 D
+<< end >>
