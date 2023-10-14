@@ -397,10 +397,6 @@ N 80 240 100 240 {
 lab=VN}
 N 720 240 740 240 {
 lab=VN}
-N 90 240 90 310 {
-lab=VN}
-N 90 310 730 310 {
-lab=VN}
 N 730 240 730 310 {
 lab=VN}
 N 160 240 180 240 {
@@ -423,16 +419,6 @@ N 170 180 650 180 {
 lab=#net5}
 N 170 180 170 240 {
 lab=#net5}
-N 240 240 240 310 {
-lab=VN}
-N 580 240 580 310 {
-lab=VN}
-N 560 240 560 300 {
-lab=VN}
-N 260 240 260 300 {
-lab=VN}
-N 260 300 560 300 {
-lab=VN}
 N 410 240 410 300 {
 lab=VN}
 N 400 240 420 240 {
@@ -503,10 +489,6 @@ N 810 240 810 250 {
 lab=VN}
 N 810 250 810 260 {
 lab=VN}
-N 260 300 260 320 {
-lab=VN}
-N 90 310 90 320 {
-lab=VN}
 N 10 -380 10 -210 {
 lab=VP}
 N 810 -380 810 -210 {
@@ -565,6 +547,30 @@ N 1500 -190 1500 -130 {
 lab=V2}
 N 1580 -190 1580 -130 {
 lab=V2}
+N 730 310 730 320 {
+lab=VN}
+N 560 240 580 240 {
+lab=VN}
+N 570 240 570 320 {
+lab=VN}
+N 410 300 410 320 {
+lab=VN}
+N 240 240 260 240 {
+lab=VN}
+N 250 240 250 320 {
+lab=VN}
+N 90 240 90 320 {
+lab=VN}
+N 1290 -10 1300 -10 {
+lab=VBN}
+N 1300 -10 1400 -10 {
+lab=VBN}
+N 1330 -40 1380 -40 {
+lab=#net4}
+N 1380 -40 1430 -40 {
+lab=#net4}
+N 1330 20 1430 20 {
+lab=VN}
 C {madvlsi/pmos3.sym} 210 -390 1 0 {name=M3b
 L=0.5
 W=3
@@ -1013,9 +1019,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 1380 -10 0 0 {name=M24
+C {madvlsi/nmos3.sym} 1330 -10 0 0 {name=M24
 L=0.5
-W=12
+W=6
 body=GND
 nf=1
 mult=1
@@ -1028,7 +1034,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/iopin.sym} 1350 -10 2 0 {name=p7 lab=VBN}
+C {devices/iopin.sym} 1290 -10 2 0 {name=p7 lab=VBN}
 C {madvlsi/nmos3.sym} 450 40 1 0 {name=M29
 L=0.5
 W=3
@@ -1329,3 +1335,18 @@ spiceprefix=X
 C {devices/iopin.sym} 10 -520 2 0 {name=p2 lab=VP}
 C {devices/iopin.sym} 10 320 2 0 {name=p1 lab=VN}
 C {devices/opin.sym} 740 -80 0 0 {name=p9 lab=VOUT}
+C {madvlsi/nmos3.sym} 1430 -10 0 0 {name=M11
+L=0.5
+W=6
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
