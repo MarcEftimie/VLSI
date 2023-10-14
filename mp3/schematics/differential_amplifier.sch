@@ -26,33 +26,33 @@ lab=VBP}
 N 210 -430 210 -420 {
 lab=VBP}
 N 160 -390 180 -390 {
-lab=VP}
+lab=VDD}
 N 240 -390 260 -390 {
 lab=#net1}
 N 320 -390 340 -390 {
-lab=VP}
+lab=VDD}
 N 400 -390 420 -390 {
 lab=#net2}
 N 480 -390 500 -390 {
-lab=VP}
+lab=VDD}
 N 560 -390 580 -390 {
 lab=#net1}
 N 640 -390 660 -390 {
-lab=VP}
+lab=VDD}
 N 170 -440 170 -390 {
-lab=VP}
+lab=VDD}
 N 170 -440 330 -440 {
-lab=VP}
+lab=VDD}
 N 330 -440 330 -390 {
-lab=VP}
+lab=VDD}
 N 330 -440 490 -440 {
-lab=VP}
+lab=VDD}
 N 490 -440 490 -390 {
-lab=VP}
+lab=VDD}
 N 490 -440 650 -440 {
-lab=VP}
+lab=VDD}
 N 650 -440 650 -390 {
-lab=VP}
+lab=VDD}
 N 250 -390 250 -320 {
 lab=#net1}
 N 410 -390 410 -310 {
@@ -62,35 +62,35 @@ lab=#net1}
 N 720 -390 740 -390 {
 lab=#net2}
 N 770 -430 770 -420 {
-lab=VP}
+lab=VDD}
 N 770 -430 810 -430 {
-lab=VP}
+lab=VDD}
 N 810 -430 810 -390 {
-lab=VP}
+lab=VDD}
 N 800 -390 810 -390 {
-lab=VP}
+lab=VDD}
 N 770 -390 770 -380 {
-lab=VP}
+lab=VDD}
 N 770 -380 810 -380 {
-lab=VP}
+lab=VDD}
 N 810 -390 810 -380 {
-lab=VP}
+lab=VDD}
 N 80 -390 100 -390 {
 lab=#net2}
 N 50 -430 50 -420 {
-lab=VP}
+lab=VDD}
 N 10 -430 50 -430 {
-lab=VP}
+lab=VDD}
 N 10 -430 10 -390 {
-lab=VP}
+lab=VDD}
 N 10 -390 20 -390 {
-lab=VP}
+lab=VDD}
 N 50 -390 50 -380 {
-lab=VP}
+lab=VDD}
 N 10 -380 50 -380 {
-lab=VP}
+lab=VDD}
 N 10 -390 10 -380 {
-lab=VP}
+lab=VDD}
 N 90 -390 90 -310 {
 lab=#net2}
 N 730 -390 730 -310 {
@@ -102,9 +102,9 @@ lab=#net1}
 N 130 -440 130 -430 {
 lab=VBP}
 N 810 -440 810 -430 {
-lab=VP}
+lab=VDD}
 N 10 -440 10 -430 {
-lab=VP}
+lab=VDD}
 N 130 -200 130 -190 {
 lab=VCP}
 N 130 -200 610 -200 {
@@ -138,35 +138,35 @@ lab=#net2}
 N 720 -160 740 -160 {
 lab=VOUT}
 N 770 -200 770 -190 {
-lab=VP}
+lab=VDD}
 N 770 -200 810 -200 {
-lab=VP}
+lab=VDD}
 N 810 -200 810 -160 {
-lab=VP}
+lab=VDD}
 N 800 -160 810 -160 {
-lab=VP}
+lab=VDD}
 N 770 -160 770 -150 {
-lab=VP}
+lab=VDD}
 N 770 -150 810 -150 {
-lab=VP}
+lab=VDD}
 N 810 -160 810 -150 {
-lab=VP}
+lab=VDD}
 N 80 -160 100 -160 {
 lab=VOUT}
 N 50 -200 50 -190 {
-lab=VP}
+lab=VDD}
 N 10 -200 50 -200 {
-lab=VP}
+lab=VDD}
 N 10 -200 10 -160 {
-lab=VP}
+lab=VDD}
 N 10 -160 20 -160 {
-lab=VP}
+lab=VDD}
 N 50 -160 50 -150 {
-lab=VP}
+lab=VDD}
 N 10 -150 50 -150 {
-lab=VP}
+lab=VDD}
 N 10 -160 10 -150 {
-lab=VP}
+lab=VDD}
 N 90 -160 90 -80 {
 lab=VOUT}
 N 730 -160 730 -80 {
@@ -176,9 +176,9 @@ lab=VOUT}
 N 130 -210 130 -200 {
 lab=VCP}
 N 810 -210 810 -200 {
-lab=VP}
+lab=VDD}
 N 10 -210 10 -200 {
-lab=VP}
+lab=VDD}
 N 240 -160 240 -80 {
 lab=VOUT}
 N 580 -160 580 -80 {
@@ -490,15 +490,15 @@ lab=VN}
 N 810 250 810 260 {
 lab=VN}
 N 10 -380 10 -210 {
-lab=VP}
+lab=VDD}
 N 810 -380 810 -210 {
-lab=VP}
+lab=VDD}
 N 810 -520 810 -440 {
-lab=VP}
+lab=VDD}
 N 10 -520 810 -520 {
-lab=VP}
+lab=VDD}
 N 10 -520 10 -440 {
-lab=VP}
+lab=VDD}
 N 10 60 10 200 {
 lab=VN}
 N 10 260 10 320 {
@@ -534,7 +534,7 @@ lab=#net3}
 N 330 100 330 190 {
 lab=#net6}
 N 410 -520 410 -440 {
-lab=VP}
+lab=VDD}
 N 170 -240 830 -240 {
 lab=#net2}
 N 170 -220 650 -220 {
@@ -1332,8 +1332,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/iopin.sym} 10 -520 2 0 {name=p2 lab=VP}
-C {devices/iopin.sym} 10 320 2 0 {name=p1 lab=VN}
+C {devices/iopin.sym} 10 -520 2 0 {name=p2 lab=VDD}
+C {devices/iopin.sym} 10 320 2 0 {name=p1 lab=GND}
 C {devices/opin.sym} 740 -80 0 0 {name=p9 lab=VOUT}
 C {madvlsi/nmos3.sym} 1430 -10 0 0 {name=M11
 L=0.5

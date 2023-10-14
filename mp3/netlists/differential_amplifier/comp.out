@@ -1,0 +1,26 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell differential_amplifier in circuit top_differential_amplifier.spice (1)(1 instance)
+
+Class differential_amplifier.spice (0):  Merged 36 parallel devices.
+Class top_differential_amplifier.spice (1):  Merged 36 parallel devices.
+Subcircuit summary:
+Circuit 1: differential_amplifier.spice    |Circuit 2: top_differential_amplifier.spic 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (20->6)            |sky130_fd_pr__pfet_01v8 (20->6)            
+sky130_fd_pr__nfet_01v8 (32->10)           |sky130_fd_pr__nfet_01v8 (32->10)           
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes differential_amplifier.spice and top_differential_amplifier.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.
