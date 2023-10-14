@@ -1,0 +1,28 @@
+magic
+tech sky130A
+timestamp 1697322577
+<< metal1 >>
+rect -1550 1730 -1510 1770
+rect -2045 1530 -2005 1570
+rect -515 1360 -475 1400
+rect 120 1180 160 1220
+rect -1855 1080 -1815 1120
+rect -430 850 -390 890
+rect -1795 590 -1755 630
+rect -1855 480 -1815 520
+rect -2045 280 -2005 320
+use differential_amplifier  differential_amplifier_0
+timestamp 1697321830
+transform 1 0 -1960 0 1 1605
+box -110 -1575 2410 170
+<< labels >>
+rlabel metal1 -2045 1550 -2045 1550 7 VP
+rlabel metal1 -1550 1750 -1550 1750 7 VBP
+rlabel metal1 -2045 300 -2045 300 7 VN
+rlabel metal1 -1855 1100 -1855 1100 7 VCP
+rlabel metal1 -1855 500 -1855 500 7 VCN
+rlabel metal1 -430 870 -430 870 7 VBN
+rlabel metal1 -515 1380 -515 1380 7 V1
+rlabel metal1 -1795 610 -1795 610 7 VOUT
+rlabel metal1 120 1200 120 1200 7 V2
+<< end >>
