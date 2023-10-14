@@ -30,7 +30,7 @@ C {madvlsi/vdd.sym} 160 -270 0 0 {name=l4 lab=VDD}
 C {madvlsi/isource.sym} 70 -50 0 0 {name=I1
 value=1u}
 C {madvlsi/vsource.sym} -70 -210 0 0 {name=VREF
-value=0.7}
+value=0.5}
 C {madvlsi/gnd.sym} -70 -180 0 0 {name=l8 lab=GND}
 C {madvlsi/vsource.sym} -140 -210 0 0 {name=VIN
 value=1.8}
@@ -59,8 +59,6 @@ C {devices/lab_pin.sym} 70 -90 2 0 {name=p2 sig_type=std_logic lab=VBP}
 C {devices/lab_pin.sym} 200 -220 2 0 {name=p3 sig_type=std_logic lab=VBN}
 C {devices/lab_pin.sym} 200 -240 2 0 {name=p4 sig_type=std_logic lab=VCN}
 C {devices/lab_pin.sym} 200 -250 2 0 {name=p5 sig_type=std_logic lab=VCP}
-C {/home/madvlsi/Documents/VLSI/mp3/schematics/diff_amp.sym} 220 -80 0 0 {name=X1}
-C {/home/madvlsi/Documents/VLSI/mp3/schematics/bias_generator.sym} 70 -170 0 0 {name=X2}
 C {devices/lab_pin.sym} 270 -130 0 0 {name=p6 sig_type=std_logic lab=VIN}
 C {devices/lab_pin.sym} 270 -90 0 0 {name=p7 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} 310 -140 1 0 {name=p8 sig_type=std_logic lab=VCP}
@@ -70,3 +68,5 @@ C {devices/lab_pin.sym} 320 -80 3 0 {name=p11 sig_type=std_logic lab=VBN}
 C {madvlsi/vdd.sym} 300 -140 0 0 {name=l6 lab=VDD}
 C {madvlsi/gnd.sym} 300 -80 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 340 -110 2 0 {name=p12 sig_type=std_logic lab=VOUT}
+C {/home/madvlsi/Documents/VLSI/mp3/schematics/differential_amplifier.sym} 220 -110 0 0 {name=X1}
+C {/home/madvlsi/Documents/VLSI/mp3/schematics/bias_generator_lds.sym} 50 -180 0 0 {name=X2}
