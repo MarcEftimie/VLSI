@@ -1,28 +1,52 @@
 magic
 tech sky130A
-timestamp 1697325557
+timestamp 1697389794
+<< nwell >>
+rect -7020 1705 -6970 2895
+<< poly >>
+rect -6780 145 -6740 155
+rect -6655 145 -6615 155
+rect -6780 125 -6770 145
+rect -6750 130 -6645 145
+rect -6750 125 -6740 130
+rect -6780 115 -6740 125
+rect -6655 125 -6645 130
+rect -6625 125 -6615 145
+rect -6655 115 -6615 125
+<< polycont >>
+rect -6770 125 -6750 145
+rect -6645 125 -6625 145
+<< locali >>
+rect -8830 2890 -8230 2930
+rect -8830 155 -8790 2890
+rect -8270 2680 -8230 2890
+rect -7660 2910 -4755 2950
+rect -7660 2680 -7620 2910
+rect -4795 2890 -4755 2910
+rect -8275 2640 -8230 2680
+rect -7675 2640 -7620 2680
+rect -7025 1930 -6970 1975
+rect -7950 225 -7910 465
+rect -7950 185 -6720 225
+rect -8830 145 -6740 155
+rect -8830 125 -6770 145
+rect -6750 125 -6740 145
+rect -8830 115 -6740 125
+rect -6655 150 -6465 155
+rect -6390 150 -6380 155
+rect -6655 145 -6380 150
+rect -6655 125 -6645 145
+rect -6625 125 -6380 145
+rect -6655 115 -6380 125
 << metal1 >>
-rect -1550 1730 -1510 1770
-rect -2045 1530 -2005 1570
-rect -515 1250 -475 1290
-rect 120 1180 160 1220
-rect -1855 1080 -1815 1120
-rect -430 850 -390 890
-rect -1795 590 -1755 630
-rect -1855 480 -1815 520
-rect -2045 280 -2005 320
-use differential_amplifier  differential_amplifier_0
-timestamp 1697325557
-transform 1 0 -1960 0 1 1605
+rect -7100 1730 -6910 2830
+rect -7200 390 -6620 1460
+use bias_generator  bias_generator_0
+timestamp 1697389219
+transform 1 0 -7520 0 1 2690
+box 550 -2635 4140 205
+use folded_cascode_differential_amplifier  folded_cascode_differential_amplifier_0 ~/Documents/VLSI/mp3/layouts
+timestamp 1697388805
+transform 0 1 -7190 -1 0 2785
 box -110 -1580 2410 170
-<< labels >>
-rlabel metal1 -2045 1550 -2045 1550 7 VP
-rlabel metal1 -1550 1750 -1550 1750 7 VBP
-rlabel metal1 -2045 300 -2045 300 7 VN
-rlabel metal1 -1855 1100 -1855 1100 7 VCP
-rlabel metal1 -1855 500 -1855 500 7 VCN
-rlabel metal1 -430 870 -430 870 7 VBN
-rlabel metal1 -1795 610 -1795 610 7 VOUT
-rlabel metal1 120 1200 120 1200 7 V2
-rlabel metal1 -515 1270 -515 1270 7 V1
 << end >>
