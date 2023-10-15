@@ -40,7 +40,7 @@ C {devices/lab_pin.sym} 400 -50 3 0 {name=p8 sig_type=std_logic lab=VBN}
 C {madvlsi/pmos3.sym} 60 -120 0 0 {name=M1
 L=0.5
 W=12
-body=VDD
+body=VP
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

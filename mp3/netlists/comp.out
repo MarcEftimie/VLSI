@@ -1,0 +1,79 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Class bias_generator (0):  Merged 31 parallel devices.
+Class bias_generator (1):  Merged 31 parallel devices.
+Subcircuit summary:
+Circuit 1: bias_generator                  |Circuit 2: bias_generator                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (38->19)           |sky130_fd_pr__pfet_01v8 (38->19)           
+sky130_fd_pr__nfet_01v8 (29->17)           |sky130_fd_pr__nfet_01v8 (29->17)           
+Number of devices: 36                      |Number of devices: 36                      
+Number of nets: 26                         |Number of nets: 26                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 18 symmetries.
+
+Subcircuit pins:
+Circuit 1: bias_generator                  |Circuit 2: bias_generator                  
+-------------------------------------------|-------------------------------------------
+VBN                                        |VBN                                        
+VBP                                        |VBP                                        
+VN                                         |VN                                         
+VP                                         |VP                                         
+VCN                                        |VCN                                        
+VCP                                        |VCP                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes bias_generator and bias_generator are equivalent.
+
+Class folded_cascode_differential_amplifier (0):  Merged 36 parallel devices.
+Class folded_cascode_differential_amplifier (1):  Merged 36 parallel devices.
+Subcircuit summary:
+Circuit 1: folded_cascode_differential_amp |Circuit 2: folded_cascode_differential_amp 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (20->6)            |sky130_fd_pr__pfet_01v8 (20->6)            
+sky130_fd_pr__nfet_01v8 (32->10)           |sky130_fd_pr__nfet_01v8 (32->10)           
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: folded_cascode_differential_amp |Circuit 2: folded_cascode_differential_amp 
+-------------------------------------------|-------------------------------------------
+VBN                                        |VBN                                        
+V2                                         |V2                                         
+V1                                         |V1                                         
+VN                                         |VN                                         
+VOUT                                       |VOUT                                       
+VP                                         |VP                                         
+VCP                                        |VCP                                        
+VCN                                        |VCN                                        
+VBP                                        |VBP                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes folded_cascode_differential_amplifier and folded_cascode_differential_amplifier are equivalent.
+
+Subcircuit summary:
+Circuit 1: differential_amplifier.spice    |Circuit 2: top_differential_amplifier.spic 
+-------------------------------------------|-------------------------------------------
+bias_generator (1)                         |bias_generator (1)                         
+folded_cascode_differential_amplifier (1)  |folded_cascode_differential_amplifier (1)  
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes differential_amplifier.spice and top_differential_amplifier.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

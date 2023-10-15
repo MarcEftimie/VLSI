@@ -1,30 +1,290 @@
-timestamp 1697325557
+timestamp 1697393108
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
-use differential_amplifier differential_amplifier_0 1 0 -3920 0 1 3210
-node "VN" 0 69.0368 -4090 560 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0
-node "VCN" 0 65.5919 -3710 960 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0
-node "VOUT" 0 69.0368 -3590 1180 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0
-node "VBN" 0 69.0368 -860 1700 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0
-node "VCP" 0 65.5919 -3710 2160 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0
-node "V2" 0 69.0368 240 2360 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0
-node "V1" 0 69.0368 -1030 2500 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0
-node "VP" 0 69.0368 -4090 3060 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0
-node "VBP" 0 69.0368 -3100 3460 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0
+use folded_cascode_differential_amplifier folded_cascode_differential_amplifier_0 0 1 -14380 -1 0 5570
+use bias_generator bias_generator_0 1 0 -15040 0 1 5380
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+node "VN" 0 68.6676 -6890 1620 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0
+node "m1_n14400_780#" 0 2776.84 -14400 780 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2482400 6600 0 0 0 0 0 0 0 0 0 0
+node "m1_n14200_3460#" 1 1397.5 -14200 3460 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 836000 5160 0 0 0 0 0 0 0 0 0 0
+node "li_n15900_370#" 470 960.373 -15900 370 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 235200 6040 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n14050_3860#" 16 50.7103 -14050 3860 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9900 400 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n15350_5280#" 1027 3052.24 -15350 5280 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 513600 13000 0 0 0 0 0 0 0 0 0 0 0 0
+node "VOUT" 74 188.862 -16220 5440 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36800 1080 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n13560_230#" 2406 5500.9 -13560 230 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17900 920 0 0 951300 24160 0 0 0 0 0 0 0 0 0 0 0 0
+node "V1" 1057 1447.21 -14190 110 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21800 1180 0 0 180000 4820 0 0 0 0 0 0 0 0 0 0 0 0
+node "V2" 820 703.07 -15240 110 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21800 1180 0 0 60000 1820 0 0 0 0 0 0 0 0 0 0 0 0
+node "VP" 5110 1477.03 -6540 3140 pdif 0 0 0 0 0 0 0 0 0 0 240000 5000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 190400 4920 880600 5500 0 0 0 0 0 0 0 0 0 0
+node "IB" 7946 2683.7 -10400 5750 p 0 0 0 0 0 0 0 0 0 0 240000 5000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 291300 7660 0 0 444000 11260 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n6820_3020#" 6265 3490.2 -6820 3020 nw 0 0 0 0 1163400 6380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n14040_3410#" 22610 714 -14040 3410 nw 0 0 0 0 238000 4960 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "VCN" "VCP" 3.00855
-cap "differential_amplifier_0/VCP" "differential_amplifier_0/VCN" -1.50427
-cap "differential_amplifier_0/VCN" "differential_amplifier_0/VCP" -1.50427
-merge "differential_amplifier_0/V2" "V2" -69.0368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0
-merge "differential_amplifier_0/VN" "VSUBS" -69.0368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0
-merge "VSUBS" "VN"
-merge "differential_amplifier_0/VOUT" "VOUT" -69.0368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0
-merge "differential_amplifier_0/VCN" "VCN" -65.5919 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0
-merge "differential_amplifier_0/VBN" "VBN" -69.0368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0
-merge "differential_amplifier_0/VCP" "VCP" -65.5919 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0
-merge "differential_amplifier_0/VBP" "VBP" -69.0368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0
-merge "differential_amplifier_0/VP" "VP" -69.0368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0
-merge "differential_amplifier_0/V1" "V1" -69.0368 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0
+cap "m1_n14400_780#" "li_n14050_3860#" 0.464268
+cap "m1_n14400_780#" "li_n15900_370#" 28.8906
+cap "m1_n14200_3460#" "li_n15350_5280#" 30.9844
+cap "a_n13560_230#" "li_n15900_370#" 705.984
+cap "a_n13560_230#" "VOUT" 39.9627
+cap "m1_n14400_780#" "m1_n14200_3460#" 28.339
+cap "VP" "w_n6820_3020#" 242.104
+cap "V2" "V1" 26.5084
+cap "w_n14040_3410#" "li_n15350_5280#" 17.8428
+cap "m1_n14400_780#" "w_n14040_3410#" 0.602972
+cap "m1_n14400_780#" "V1" 1010.12
+cap "m1_n14400_780#" "V2" 1.81625
+cap "VN" "VP" 0.293333
+cap "a_n13560_230#" "V1" 62.9644
+cap "V2" "a_n13560_230#" 61.5283
+cap "IB" "VP" 2072.9
+cap "a_n13560_230#" "li_n15350_5280#" 3.53919
+cap "m1_n14200_3460#" "li_n14050_3860#" 82.8607
+cap "m1_n14400_780#" "a_n13560_230#" 11.5267
+cap "w_n14040_3410#" "li_n14050_3860#" 39.8448
+cap "V1" "li_n15900_370#" 61.0151
+cap "V2" "li_n15900_370#" 79.6498
+cap "VN" "w_n6820_3020#" 0.0315361
+cap "IB" "li_n15350_5280#" 99.3589
+cap "m1_n14200_3460#" "w_n14040_3410#" 141.821
+cap "IB" "w_n6820_3020#" 280.613
+cap "VOUT" "li_n15350_5280#" 13.8325
+cap "m1_n14200_3460#" "V1" 0.480229
+device msubckt sky130_fd_pr__pfet_01v8 -6640 3140 -6639 3141 l=100 w=2400 "w_n6820_3020#" "IB" 200 0 "IB" 2400 240000,5000 "VP" 2400 240000,5000
+cap "folded_cascode_differential_amplifier_0/a_680_n1710#" "a_n13560_230#" 6.81278
+cap "a_n13560_230#" "folded_cascode_differential_amplifier_0/a_120_n2910#" 42.0577
+cap "folded_cascode_differential_amplifier_0/VBN" "folded_cascode_differential_amplifier_0/VN" 3.72617
+cap "folded_cascode_differential_amplifier_0/V2" "folded_cascode_differential_amplifier_0/VN" 0.256003
+cap "a_n13560_230#" "folded_cascode_differential_amplifier_0/VN" 66.6162
+cap "a_n13560_230#" "folded_cascode_differential_amplifier_0/a_3000_n610#" 1.03443
+cap "a_n13560_230#" "folded_cascode_differential_amplifier_0/a_680_n2910#" 0.976279
+cap "a_n13560_230#" "folded_cascode_differential_amplifier_0/V2" 0.0334445
+cap "folded_cascode_differential_amplifier_0/V2" "folded_cascode_differential_amplifier_0/VBN" 3.80011
+cap "a_n13560_230#" "folded_cascode_differential_amplifier_0/VBN" 0.231011
+cap "a_n13560_230#" "folded_cascode_differential_amplifier_0/a_120_n410#" 0.00461305
+cap "folded_cascode_differential_amplifier_0/a_120_n410#" "folded_cascode_differential_amplifier_0/VBN" 0.00588835
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/a_3000_n610#" -1.98596
+cap "folded_cascode_differential_amplifier_0/V2" "folded_cascode_differential_amplifier_0/V1" -4.28427
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "folded_cascode_differential_amplifier_0/a_3000_n610#" -0.484977
+cap "folded_cascode_differential_amplifier_0/V1" "folded_cascode_differential_amplifier_0/VBN" 0.0873837
+cap "folded_cascode_differential_amplifier_0/V2" "folded_cascode_differential_amplifier_0/VN" 67.0466
+cap "a_n13560_230#" "folded_cascode_differential_amplifier_0/VN" 2.78021
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/VBN" 18.6192
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "folded_cascode_differential_amplifier_0/V2" 0.825172
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "folded_cascode_differential_amplifier_0/VBN" 0.0531604
+cap "folded_cascode_differential_amplifier_0/V2" "folded_cascode_differential_amplifier_0/a_3000_n610#" 9.80769
+cap "a_n13560_230#" "folded_cascode_differential_amplifier_0/a_3000_n610#" 4.14949
+cap "folded_cascode_differential_amplifier_0/a_3000_n610#" "folded_cascode_differential_amplifier_0/VBN" 26.349
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/V1" 1.20283
+cap "folded_cascode_differential_amplifier_0/V2" "folded_cascode_differential_amplifier_0/V1" -4.34369
+cap "folded_cascode_differential_amplifier_0/V2" "folded_cascode_differential_amplifier_0/VN" 4.27333
+cap "bias_generator_0/VCN" "folded_cascode_differential_amplifier_0/V1" 0.211592
+cap "bias_generator_0/VCN" "folded_cascode_differential_amplifier_0/VN" 2.37393
+cap "folded_cascode_differential_amplifier_0/VBN" "folded_cascode_differential_amplifier_0/a_520_n410#" 5.43155
+cap "folded_cascode_differential_amplifier_0/a_120_n410#" "folded_cascode_differential_amplifier_0/VN" 2.14219
+cap "folded_cascode_differential_amplifier_0/VBN" "folded_cascode_differential_amplifier_0/V1" 22.9949
+cap "folded_cascode_differential_amplifier_0/VBN" "folded_cascode_differential_amplifier_0/VN" 37.4082
+cap "folded_cascode_differential_amplifier_0/V1" "bias_generator_0/a_2450_n4910#" 0.0206902
+cap "folded_cascode_differential_amplifier_0/V1" "folded_cascode_differential_amplifier_0/a_520_n410#" 112.61
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/a_520_n410#" 154.165
+cap "folded_cascode_differential_amplifier_0/V1" "folded_cascode_differential_amplifier_0/VN" 39.1121
+cap "folded_cascode_differential_amplifier_0/a_3000_n610#" "folded_cascode_differential_amplifier_0/VN" 5.68722
+cap "folded_cascode_differential_amplifier_0/VBN" "bias_generator_0/VCN" 17.103
+cap "folded_cascode_differential_amplifier_0/VN" "bias_generator_0/VBN" 374.788
+cap "bias_generator_0/VBN" "folded_cascode_differential_amplifier_0/V1" 21.2143
+cap "bias_generator_0/VCN" "bias_generator_0/a_2550_n4950#" 1.77636e-15
+cap "folded_cascode_differential_amplifier_0/VN" "bias_generator_0/VCN" 99.9749
+cap "bias_generator_0/VCN" "bias_generator_0/VBN" 314.35
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/V1" 0.695064
+cap "bias_generator_0/VN" "bias_generator_0/VCN" -3.55271e-15
+cap "a_n13560_230#" "folded_cascode_differential_amplifier_0/VN" 7.99438
+cap "a_n13560_230#" "folded_cascode_differential_amplifier_0/a_680_n2910#" 393.895
+cap "a_n13560_230#" "folded_cascode_differential_amplifier_0/a_120_n2910#" 63.3475
+cap "folded_cascode_differential_amplifier_0/a_680_n1710#" "a_n13560_230#" 1.43114
+cap "folded_cascode_differential_amplifier_0/a_120_n410#" "folded_cascode_differential_amplifier_0/VN" 0.264329
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/V2" 0.476385
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/a_3000_n610#" 0.408096
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/V2" -2.77556e-17
+cap "bias_generator_0/VCN" "folded_cascode_differential_amplifier_0/V1" 0.346655
+cap "bias_generator_0/VCN" "folded_cascode_differential_amplifier_0/VN" 0.0135579
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/V1" 36.3711
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "folded_cascode_differential_amplifier_0/VBN" 3.83563
+cap "folded_cascode_differential_amplifier_0/V1" "bias_generator_0/a_2450_n4910#" 0.0241894
+cap "folded_cascode_differential_amplifier_0/VBN" "folded_cascode_differential_amplifier_0/V1" 22.7176
+cap "folded_cascode_differential_amplifier_0/VBN" "folded_cascode_differential_amplifier_0/VN" 0.0761071
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/V1" 0.0808304
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/VN" 2.22045e-16
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "folded_cascode_differential_amplifier_0/V1" 277.805
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "folded_cascode_differential_amplifier_0/VN" 464.388
+cap "folded_cascode_differential_amplifier_0/V2" "folded_cascode_differential_amplifier_0/VN" 15.1609
+cap "folded_cascode_differential_amplifier_0/a_120_n410#" "folded_cascode_differential_amplifier_0/VN" 9.23226
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/a_3000_n610#" 17.0617
+cap "bias_generator_0/a_2550_n4950#" "folded_cascode_differential_amplifier_0/VN" 0.730543
+cap "bias_generator_0/VBN" "folded_cascode_differential_amplifier_0/VP" 3.55271e-15
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "bias_generator_0/VCN" 0.0010104
+cap "bias_generator_0/VCN" "folded_cascode_differential_amplifier_0/VN" 0.910734
+cap "bias_generator_0/a_2450_n4910#" "folded_cascode_differential_amplifier_0/VN" 0.119786
+cap "folded_cascode_differential_amplifier_0/V1" "bias_generator_0/VBN" 21.0533
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "bias_generator_0/VBN" 3.7812
+cap "bias_generator_0/VBN" "folded_cascode_differential_amplifier_0/VN" 744.968
+cap "w_n6820_3020#" "bias_generator_0/VN" -0.178203
+cap "folded_cascode_differential_amplifier_0/a_680_n2910#" "folded_cascode_differential_amplifier_0/VCN" 444.176
+cap "folded_cascode_differential_amplifier_0/a_120_n2910#" "folded_cascode_differential_amplifier_0/VCN" 98.164
+cap "folded_cascode_differential_amplifier_0/VCN" "folded_cascode_differential_amplifier_0/VN" 15.2493
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/a_520_n410#" 7.2632
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/a_120_n410#" 0.384704
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "bias_generator_0/VBN" 0.0522554
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/VOUT" -2.27374e-13
+cap "folded_cascode_differential_amplifier_0/a_120_n410#" "bias_generator_0/VBN" 0.187818
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/VCP" 0.76981
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/a_680_n1710#" -5.68434e-14
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "folded_cascode_differential_amplifier_0/VBP" 1.95221
+cap "folded_cascode_differential_amplifier_0/a_120_n410#" "folded_cascode_differential_amplifier_0/VBP" 0.202703
+cap "folded_cascode_differential_amplifier_0/VBP" "folded_cascode_differential_amplifier_0/VN" 0.36958
+cap "folded_cascode_differential_amplifier_0/VBP" "folded_cascode_differential_amplifier_0/a_520_n410#" 3.19113
+cap "folded_cascode_differential_amplifier_0/a_120_n410#" "folded_cascode_differential_amplifier_0/VBP" 8.71875
+cap "folded_cascode_differential_amplifier_0/VBP" "bias_generator_0/VCN" 0.0679992
+cap "bias_generator_0/VBN" "folded_cascode_differential_amplifier_0/VBP" 0.1474
+cap "folded_cascode_differential_amplifier_0/VBP" "folded_cascode_differential_amplifier_0/VP" 492.347
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/a_520_n410#" 25.4471
+cap "bias_generator_0/VBN" "folded_cascode_differential_amplifier_0/VN" 0.326229
+cap "folded_cascode_differential_amplifier_0/V1" "folded_cascode_differential_amplifier_0/VP" -0.804489
+cap "folded_cascode_differential_amplifier_0/V2" "folded_cascode_differential_amplifier_0/VP" -0.301989
+cap "bias_generator_0/VBN" "folded_cascode_differential_amplifier_0/a_520_n410#" 3.40508
+cap "folded_cascode_differential_amplifier_0/a_120_n410#" "bias_generator_0/VBN" 1.22032
+cap "folded_cascode_differential_amplifier_0/VCP" "folded_cascode_differential_amplifier_0/VP" 0.4
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/VP" 97.965
+cap "folded_cascode_differential_amplifier_0/a_3000_n610#" "folded_cascode_differential_amplifier_0/VP" -0.0637898
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "folded_cascode_differential_amplifier_0/VP" 14.9368
+cap "folded_cascode_differential_amplifier_0/a_120_n410#" "folded_cascode_differential_amplifier_0/VP" 13.6844
+cap "bias_generator_0/VCN" "folded_cascode_differential_amplifier_0/VP" 0.0267576
+cap "bias_generator_0/VBN" "folded_cascode_differential_amplifier_0/VP" 23.2723
+cap "folded_cascode_differential_amplifier_0/VN" "bias_generator_0/a_2550_n4950#" 0.11906
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "bias_generator_0/VBN" 3.39623
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "bias_generator_0/VCN" 0.00707277
+cap "folded_cascode_differential_amplifier_0/VN" "bias_generator_0/VBN" 31.8625
+cap "folded_cascode_differential_amplifier_0/VN" "bias_generator_0/VCN" 0.184488
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "folded_cascode_differential_amplifier_0/VP" 0.110203
+cap "folded_cascode_differential_amplifier_0/VBP" "bias_generator_0/VBN" -2.84217e-14
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/VP" 36.2903
+cap "bias_generator_0/VBN" "folded_cascode_differential_amplifier_0/VP" -1.62731
+cap "folded_cascode_differential_amplifier_0/VBP" "folded_cascode_differential_amplifier_0/VP" -4.54747e-13
+cap "bias_generator_0/VBN" "folded_cascode_differential_amplifier_0/VP" -4.29448
+cap "IB" "bias_generator_0/VCP" 0.37403
+cap "IB" "w_n6820_3020#" 274.083
+cap "bias_generator_0/VN" "w_n6820_3020#" 0.824229
+cap "bias_generator_0/VCP" "w_n6820_3020#" 5.70153
+cap "folded_cascode_differential_amplifier_0/VCN" "folded_cascode_differential_amplifier_0/VN" 120.265
+cap "folded_cascode_differential_amplifier_0/VOUT" "folded_cascode_differential_amplifier_0/a_120_n2910#" -2.00787
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/VN" -7.26735
+cap "folded_cascode_differential_amplifier_0/VCN" "folded_cascode_differential_amplifier_0/a_120_n2910#" 347.466
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/VOUT" 1.92099
+cap "folded_cascode_differential_amplifier_0/VCN" "folded_cascode_differential_amplifier_0/VOUT" 38.4888
+cap "folded_cascode_differential_amplifier_0/VCN" "folded_cascode_differential_amplifier_0/VCP" -1.7696
+cap "folded_cascode_differential_amplifier_0/VOUT" "folded_cascode_differential_amplifier_0/VP" 113.529
+cap "folded_cascode_differential_amplifier_0/VBP" "folded_cascode_differential_amplifier_0/a_120_n410#" 0.260736
+cap "folded_cascode_differential_amplifier_0/VOUT" "folded_cascode_differential_amplifier_0/a_120_n410#" -3.72203
+cap "folded_cascode_differential_amplifier_0/VCP" "folded_cascode_differential_amplifier_0/VCN" -1.41633
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "bias_generator_0/VBN" 0.0522554
+cap "folded_cascode_differential_amplifier_0/VOUT" "folded_cascode_differential_amplifier_0/VCN" 4.52271
+cap "folded_cascode_differential_amplifier_0/a_120_n410#" "folded_cascode_differential_amplifier_0/VP" -17.6176
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/VCN" 3.71969
+cap "folded_cascode_differential_amplifier_0/VCP" "folded_cascode_differential_amplifier_0/a_520_n410#" 0.0445926
+cap "folded_cascode_differential_amplifier_0/VCP" "bias_generator_0/VBN" 0.0055652
+cap "folded_cascode_differential_amplifier_0/VCP" "folded_cascode_differential_amplifier_0/VBP" 1.62524
+cap "folded_cascode_differential_amplifier_0/a_120_n2910#" "folded_cascode_differential_amplifier_0/VOUT" -2.08679
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "folded_cascode_differential_amplifier_0/VBP" 1.22703
+cap "folded_cascode_differential_amplifier_0/VCP" "folded_cascode_differential_amplifier_0/VOUT" 4.03854
+cap "folded_cascode_differential_amplifier_0/a_680_n1710#" "folded_cascode_differential_amplifier_0/VP" 1.13687e-13
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "folded_cascode_differential_amplifier_0/VP" 2.11209
+cap "folded_cascode_differential_amplifier_0/VCP" "folded_cascode_differential_amplifier_0/VP" 186.872
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/VP" -3.94966
+cap "folded_cascode_differential_amplifier_0/VCP" "folded_cascode_differential_amplifier_0/a_120_n410#" 58.3731
+cap "folded_cascode_differential_amplifier_0/VBP" "folded_cascode_differential_amplifier_0/VP" -1.11022e-16
+cap "folded_cascode_differential_amplifier_0/a_120_n410#" "folded_cascode_differential_amplifier_0/VBP" 10.2906
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/a_520_n410#" 6.17691
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/VBP" 1257.77
+cap "bias_generator_0/VBN" "folded_cascode_differential_amplifier_0/VBP" 3.44915
+cap "folded_cascode_differential_amplifier_0/VP" "bias_generator_0/VCN" 0.0451674
+cap "folded_cascode_differential_amplifier_0/VCP" "folded_cascode_differential_amplifier_0/VBP" 2.85102
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/a_120_n410#" 20.6322
+cap "bias_generator_0/VBN" "folded_cascode_differential_amplifier_0/VP" 8.33081
+cap "folded_cascode_differential_amplifier_0/a_120_n410#" "folded_cascode_differential_amplifier_0/VCP" 2.5
+cap "folded_cascode_differential_amplifier_0/a_520_n410#" "folded_cascode_differential_amplifier_0/VBP" 2.59558
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/VCP" 22.0016
+cap "bias_generator_0/VCN" "folded_cascode_differential_amplifier_0/VBP" 0.155998
+cap "folded_cascode_differential_amplifier_0/VBP" "folded_cascode_differential_amplifier_0/VP" 0.0320288
+cap "folded_cascode_differential_amplifier_0/VP" "bias_generator_0/VBN" 0.556805
+cap "folded_cascode_differential_amplifier_0/VP" "li_n15350_5280#" 42.4064
+cap "bias_generator_0/VCP" "bias_generator_0/VP" 40.0124
+cap "bias_generator_0/VP" "bias_generator_0/VCN" -0.998903
+cap "bias_generator_0/VCN" "bias_generator_0/VBP" 1.89219
+cap "bias_generator_0/VP" "bias_generator_0/VCP" 49.9034
+cap "bias_generator_0/VBP" "bias_generator_0/VCP" 4.56863
+cap "bias_generator_0/a_5740_n2350#" "bias_generator_0/VBP" 0.307802
+cap "bias_generator_0/VCN" "bias_generator_0/VCP" 5.42553
+cap "bias_generator_0/VP" "bias_generator_0/VBP" 47.8652
+cap "bias_generator_0/VBP" "bias_generator_0/VP" 16.1359
+cap "bias_generator_0/a_5740_n2350#" "bias_generator_0/VBP" 5.38654
+cap "bias_generator_0/a_5740_n2350#" "IB" 2.00072
+cap "bias_generator_0/VCP" "IB" 7.04891
+cap "w_n6820_3020#" "bias_generator_0/VCP" 0.493172
+cap "w_n6820_3020#" "IB" 348.32
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/VP" -0.743039
+cap "folded_cascode_differential_amplifier_0/VCN" "folded_cascode_differential_amplifier_0/VOUT" 0.681406
+cap "folded_cascode_differential_amplifier_0/VCN" "folded_cascode_differential_amplifier_0/a_120_n2910#" 7.00574
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/VCN" 294.169
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/VOUT" 0.143933
+cap "folded_cascode_differential_amplifier_0/VOUT" "folded_cascode_differential_amplifier_0/VP" 20.7737
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/VCP" 81.9766
+cap "folded_cascode_differential_amplifier_0/VCP" "folded_cascode_differential_amplifier_0/a_120_n410#" 9.09951
+cap "bias_generator_0/VBP" "folded_cascode_differential_amplifier_0/VCP" 0.384036
+cap "folded_cascode_differential_amplifier_0/VN" "folded_cascode_differential_amplifier_0/VP" -0.615601
+cap "folded_cascode_differential_amplifier_0/VP" "folded_cascode_differential_amplifier_0/VCN" 0.2284
+cap "folded_cascode_differential_amplifier_0/VOUT" "folded_cascode_differential_amplifier_0/VCP" -0.902123
+cap "folded_cascode_differential_amplifier_0/VCP" "folded_cascode_differential_amplifier_0/VP" 211.945
+cap "folded_cascode_differential_amplifier_0/VCP" "folded_cascode_differential_amplifier_0/a_120_n410#" 2.6545
+cap "bias_generator_0/VBP" "folded_cascode_differential_amplifier_0/VP" 14.1653
+cap "folded_cascode_differential_amplifier_0/VBP" "folded_cascode_differential_amplifier_0/VCP" 1.51481
+cap "folded_cascode_differential_amplifier_0/VCP" "folded_cascode_differential_amplifier_0/a_520_n410#" 0.0392631
+cap "bias_generator_0/VBP" "folded_cascode_differential_amplifier_0/VCP" 180.384
+cap "li_n15350_5280#" "bias_generator_0/VBP" 537.837
+cap "folded_cascode_differential_amplifier_0/VP" "bias_generator_0/VBP" 0.211597
+cap "folded_cascode_differential_amplifier_0/VP" "li_n15350_5280#" 6.59749
+cap "bias_generator_0/VBP" "bias_generator_0/VCP" 552.229
+cap "bias_generator_0/VP" "bias_generator_0/VCP" 6.59749
+cap "bias_generator_0/VCN" "bias_generator_0/VCP" 7.94308
+cap "bias_generator_0/VCN" "bias_generator_0/VBP" 5.13099
+cap "bias_generator_0/VBP" "bias_generator_0/VCP" 209.28
+cap "bias_generator_0/VCP" "bias_generator_0/VBP" 4.56863
+cap "bias_generator_0/a_5640_n2240#" "bias_generator_0/VBP" 1.24763
+cap "bias_generator_0/VP" "bias_generator_0/VCP" 10.8628
+cap "bias_generator_0/VP" "bias_generator_0/VBP" 16
+cap "bias_generator_0/VCP" "bias_generator_0/VP" 87.0005
+cap "bias_generator_0/VBP" "bias_generator_0/VP" 362.039
+cap "bias_generator_0/VBP" "bias_generator_0/VCP" 525
+cap "bias_generator_0/VBP" "bias_generator_0/VP" 6.59749
+cap "IB" "w_n6820_3020#" 49.1846
+cap "IB" "bias_generator_0/VCP" 286.274
+cap "bias_generator_0/VCP" "w_n6820_3020#" 0.356693
+merge "bias_generator_0/VN" "VN" -2586.62 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -8760 0 0 0 0 0 0 0 0 0 0
+merge "VN" "folded_cascode_differential_amplifier_0/VN"
+merge "folded_cascode_differential_amplifier_0/VN" "m1_n14400_780#"
+merge "m1_n14400_780#" "VSUBS"
+merge "folded_cascode_differential_amplifier_0/V2" "V2" -117.534 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "bias_generator_0/VP" "VP" -17467.3 0 0 0 0 -4210400 -20870 0 0 -240000 -5000 -480000 -10000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -256800 -5340 0 0 -625200 -10360 -3423200 -19800 0 0 0 0 0 0 0 0 0 0
+merge "VP" "w_n6820_3020#"
+merge "w_n6820_3020#" "folded_cascode_differential_amplifier_0/VP"
+merge "folded_cascode_differential_amplifier_0/VP" "m1_n14200_3460#"
+merge "m1_n14200_3460#" "w_n14040_3410#"
+merge "folded_cascode_differential_amplifier_0/VOUT" "VOUT" -112.022 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "folded_cascode_differential_amplifier_0/VCN" "bias_generator_0/VCN" -1607.32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -113600 -3160 0 0 0 0 0 0 0 0 0 0 0 0
+merge "bias_generator_0/VCN" "a_n13560_230#"
+merge "bias_generator_0/VBN" "folded_cascode_differential_amplifier_0/VBN" -399.677 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "folded_cascode_differential_amplifier_0/VBN" "li_n15900_370#"
+merge "bias_generator_0/VCP" "folded_cascode_differential_amplifier_0/VCP" -2497.41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -319200 -8220 0 0 0 0 0 0 0 0 0 0 0 0
+merge "folded_cascode_differential_amplifier_0/VCP" "li_n15350_5280#"
+merge "bias_generator_0/VBP" "IB" -3345.74 0 0 0 0 0 0 0 0 0 0 -240000 -5000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -254300 -5360 0 0 -317600 -8380 0 0 0 0 0 0 0 0 0 0 0 0
+merge "IB" "folded_cascode_differential_amplifier_0/VBP"
+merge "folded_cascode_differential_amplifier_0/VBP" "li_n14050_3860#"
+merge "folded_cascode_differential_amplifier_0/V1" "V1" -468.654 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0 0 0
