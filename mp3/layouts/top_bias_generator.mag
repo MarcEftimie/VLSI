@@ -1,0 +1,23 @@
+magic
+tech sky130A
+timestamp 1697332117
+<< locali >>
+rect -5 1910 35 1950
+rect 245 70 285 110
+rect 2220 65 2265 105
+rect 575 0 615 40
+<< metal1 >>
+rect 55 2815 95 2855
+rect 345 1275 385 1315
+use bias_generator  bias_generator_0
+timestamp 1697332078
+transform 1 0 -555 0 1 2675
+box 550 -2675 4140 205
+<< labels >>
+rlabel locali -5 1930 -5 1930 7 VBP
+rlabel metal1 55 2835 55 2835 7 VP
+rlabel locali 245 90 245 90 7 VBN
+rlabel locali 2240 65 2240 65 5 VCP
+rlabel locali 575 20 575 20 7 VCN
+rlabel metal1 365 1315 365 1315 1 VN
+<< end >>

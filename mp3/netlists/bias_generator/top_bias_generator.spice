@@ -1,0 +1,78 @@
+* NGSPICE file created from top_bias_generator.ext - technology: sky130A
+
+.subckt bias_generator VP VN VBP VBN VCN VCP
+X0 VN a_7940_n5140# a_5440_n5110# VN sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X1 a_2550_n5150# a_2550_n5150# a_2450_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X2 VN a_4750_n5240# VCN VN sky130_fd_pr__nfet_01v8 ad=5.4 pd=24.9 as=3 ps=12.5 w=12 l=0.5
+X3 a_7040_n5110# VCP a_6840_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X4 a_5640_n2240# a_5740_n2350# a_5740_n2350# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X5 a_2450_n5110# a_2550_n5150# a_2550_n5150# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X6 a_6040_n5110# VCP a_5840_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X7 a_5640_n2240# a_5440_n5110# a_5440_n5110# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X8 VP a_5740_n2350# a_5640_n2240# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X9 VP VBP VBP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X10 a_3650_n2110# VBN a_2550_n5150# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X11 VCN VBN a_4450_n2110# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X12 VP VBP VBP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X13 a_2650_n2110# VBN VP VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X14 VCN VCN a_2450_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X15 a_5440_n5110# VCP VN VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X16 VN VBN VBN VN sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=6 ps=25 w=12 l=0.5
+X17 a_2450_n5110# a_2550_n5150# VN VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X18 a_6840_n5110# VCP a_5740_n2350# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X19 a_5640_n2240# a_5740_n2350# a_5740_n2350# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X20 a_5740_n2350# a_5740_n2350# a_5640_n2240# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X21 a_2550_n5150# a_2550_n5150# a_2450_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X22 a_5840_n5110# VCP VN VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X23 VBN VBP VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X24 a_4450_n2110# VBN a_4250_n2110# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X25 a_5440_n5110# a_5330_210# VP VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=5.4 ps=24.9 w=12 l=0.5
+X26 VBN VP VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X27 a_2550_n5150# VBN a_3250_n2110# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X28 VP VBN VCN VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X29 a_2450_n5110# a_2550_n5150# a_2550_n5150# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X30 VN VCP a_7440_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X31 VN a_2550_n5150# a_2450_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X32 VN VCP a_5440_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X33 a_5740_n2350# VCP a_6440_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X34 a_5740_n2350# a_5740_n2350# a_5640_n2240# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X35 a_5640_n2240# a_5740_n2350# a_5740_n2350# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X36 a_2450_n5110# VCN VCN VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X37 a_4250_n2110# VBN a_4050_n2110# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X38 VBP VBP VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X39 a_3250_n2110# VBN a_3050_n2110# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X40 VBP VBP VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X41 VCN a_2140_n2240# a_2050_n2110# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X42 a_2550_n5150# a_2550_n5150# a_2450_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X43 a_7440_n5110# VCP a_7240_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X44 a_2450_n5110# a_2550_n5150# a_2550_n5150# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X45 a_5440_n5110# a_5330_n2660# VN VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=5.4 ps=24.9 w=12 l=0.5
+X46 a_6440_n5110# VCP a_6240_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X47 VCN a_2140_n5240# VN VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X48 VP a_7940_n2270# a_5440_n5110# VP sky130_fd_pr__pfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X49 a_5740_n2350# a_5740_n2350# a_5640_n2240# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X50 VBN VBP VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X51 a_5640_n2240# a_5740_n2350# a_5740_n2350# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X52 a_6240_n5110# VCP a_6040_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X53 a_7240_n5110# VCP a_7040_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X54 a_3050_n2110# VBN a_2850_n2110# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X55 a_4050_n2110# VBN a_3850_n2110# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X56 a_5440_n5110# a_5440_n5110# a_5640_n2240# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X57 a_2550_n5150# a_2550_n5150# a_2450_n5110# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X58 a_2450_n5110# a_2550_n5150# a_2550_n5150# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X59 VP VBP VBN VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X60 VP VBP VBN VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X61 a_5640_n2240# a_5740_n2350# VP VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X62 VP a_4750_n2240# VCN VP sky130_fd_pr__pfet_01v8 ad=5.4 pd=24.9 as=3 ps=12.5 w=12 l=0.5
+X63 a_5740_n2350# a_5740_n2350# a_5640_n2240# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X64 a_1210_180# VP VBN VP sky130_fd_pr__pfet_01v8 ad=1.35 pd=6.9 as=0.75 ps=3.5 w=3 l=0.5
+X65 a_2850_n2110# VBN a_2650_n2110# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X66 a_3850_n2110# VBN a_3650_n2110# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+.ends
+
+
+* Top level circuit top_bias_generator
+
+Xbias_generator_0 VP VN VBP VBN VCN VCP bias_generator
+.end
+
